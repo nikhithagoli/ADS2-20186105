@@ -31,13 +31,5 @@ Audit done.
 Checkstyle ends with 28 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:11:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:17:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:33:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:62:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:178:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:291:45: '+' should be on a new line. [OperatorWrap]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:301:45: '+' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 1 errors.

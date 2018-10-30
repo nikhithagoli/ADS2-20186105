@@ -8,20 +8,20 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int vertices();
+    int vertices();
     /**
      * no of edges.
      *
      * @return     { description_of_the_return_value }
      */
-    public int edges();
+    int edges();
     /**
      * Adds an edge.
      *
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
-    public void addEdge(int v, int w);
+    void addEdge(int v, int w);
     /**
      * Determines if it has edge.
      *
@@ -30,7 +30,7 @@ interface Graph {
      *
      * @return     True if has edge, False otherwise.
      */
-    public boolean hasEdge(int v, int w);
+    boolean hasEdge(int v, int w);
 }
 /**
  * Class for graphlist.
@@ -59,7 +59,7 @@ class Graphlist implements Graph {
      * @param      e     { parameter_description }
      * @param      c     { parameter_description }
      */
-    public Graphlist(final int v, final int e, final String[] c) {
+    Graphlist(final int v, final int e, final String[] c) {
         cities = c;
         this.vertex = v;
         this.edge = 0;
@@ -175,7 +175,7 @@ class Graphmatrix implements Graph {
      * @param      e     { parameter_description }
      * @param      c     { parameter_description }
      */
-    public Graphmatrix(final int v, final int e, final String[] c) {
+    Graphmatrix(final int v, final int e, final String[] c) {
         cities = c;
         matrix = new int[v][v];
         this.vertex = v;
@@ -288,8 +288,8 @@ final class Solution {
                 l.addEdge(Integer.parseInt(tokens[0]),
                     Integer.parseInt(tokens[1]));
             }
-            System.out.println(l.vertices() +
-                 " vertices, " + l.edges() + " edges");
+            System.out.println(l.vertices()
+                + " vertices, " + l.edges() + " edges");
             l.print();
         } else {
             Graphmatrix m = new Graphmatrix(v, e, cities);
@@ -298,8 +298,8 @@ final class Solution {
                 m.addEdge(Integer.parseInt(tokens[0]),
                      Integer.parseInt(tokens[1]));
             }
-            System.out.println(m.vertices() +
-                 " vertices, " + m.edges() + " edges");
+            System.out.println(m.vertices()
+                + " vertices, " + m.edges() + " edges");
             m.print();
         }
     }

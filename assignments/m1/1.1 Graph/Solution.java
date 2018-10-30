@@ -90,7 +90,7 @@ class Graphmatrix implements Graph {
 		}
 	}
 	public void addEdge(int v, int w) {
-		if(v == w) {
+		if(v == w || hasEdge(v, w)) {
 			return;
 		}
 		matrix[v][w] = 1;

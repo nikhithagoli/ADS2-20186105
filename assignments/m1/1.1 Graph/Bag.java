@@ -10,21 +10,15 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- *  The <tt>Bag</tt> class represents a bag (or multiset) of 
- *  generic items. It supports insertion and iterating over the 
- *  items in arbitrary order.
- *  <p>
- *  The <em>add</em>, <em>isEmpty</em>, and <em>size</em>  operation 
- *  take constant time. Iteration takes time proportional to the number of items.
- *  <p>
- *  For additional documentation, see <a href="http://algs4.cs.princeton.edu/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * Class for bag.
+ *
+ * @param      <Item>  The item
  */
 public class Bag<Item> implements Iterable<Item> {
     /**
      * N.
      */
-    private int N;         // number of elements in bag
+    private int num;         // number of elements in bag
     /**
      * first.
      */
@@ -49,7 +43,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     public Bag() {
         first = null;
-        N = 0;
+        num = 0;
     }
 
    /**
@@ -67,7 +61,7 @@ public class Bag<Item> implements Iterable<Item> {
     * @return     { description_of_the_return_value }
     */
     public int size() {
-        return N;
+        return num;
     }
 
    /**
@@ -75,20 +69,22 @@ public class Bag<Item> implements Iterable<Item> {
     *
     * @param      item  The item
     */
-    public void add(Item item) {
+    public void add(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        num++;
     }
 
 
    /**
-     * Return an iterator that iterates over the items in the bag.
-     */
-    public Iterator<Item> iterator()  {
-        return new ListIterator();  
+    * iterator.
+    *
+    * @return     { description_of_the_return_value }
+    */
+    public Iterator<Item> iterator() {
+        return new ListIterator();
     }
 
     /**
@@ -114,12 +110,12 @@ public class Bag<Item> implements Iterable<Item> {
             throw new UnsupportedOperationException();
         }
         /**
-         * { function_description }
+         * { function_description }.
          *
          * @return     { description_of_the_return_value }
          */
         public Item next() {
-            if (!hasNext()){
+            if (!hasNext()) {
                 throw new NoSuchElementException();
             }
             Item item = current.item;

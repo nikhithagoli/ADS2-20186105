@@ -1,18 +1,6 @@
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:14: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:17: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:18: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:20: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:23: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:27:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:78:21: Parameter item should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:90: Expected @return tag. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:91: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:116: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Bag.java:122:28: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

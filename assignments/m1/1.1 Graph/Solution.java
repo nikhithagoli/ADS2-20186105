@@ -52,8 +52,14 @@ class Graphlist implements Graph {
 				for(int each: adj[i]) {
 					str += cities[each] + " ";
 				}
-				System.out.println(str.substring(0,str.length()-1));
+				System.out.println(str);
 			}
+			String str = "";
+				str += cities[vertex-1] + ": ";
+				for(int each: adj[vertex-1]) {
+					str += cities[each] + " ";
+				}
+				System.out.println(str.substring(0,str.length()-1));
 		}
 	}
 }

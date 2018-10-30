@@ -14,12 +14,15 @@ Your Output:
 false
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 true
 
 Your Output: 
-true
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+	at Connectedcomponents.dfs(Solution.java:38)
+	at Connectedcomponents.<init>(Solution.java:28)
+	at Solution.main(Solution.java:165)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -38,12 +41,12 @@ Your Output:
 true
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+true
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########

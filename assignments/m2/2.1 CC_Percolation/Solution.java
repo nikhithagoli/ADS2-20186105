@@ -41,7 +41,13 @@ class Connectedcomponents {
         }
 	}
 	boolean ispercolated(Graphmatrix g) {
-		return id[0] == id[g.vertices()-1];
+		// return id[0] == id[g.vertices()-1];
+		for(int i = 0; i < g.vertices(); i++) {
+			if(id[0] != id[i]) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
 /**
@@ -83,9 +89,9 @@ class Graphmatrix {
      * @param      w     { parameter_description }
      */
     public void addEdge(final int v, final int w) {
-        if (v == w || hasEdge(v, w)) {
+        /*if (v == w || hasEdge(v, w)) {
             return;
-        }
+        }*/
         matrix[v][w] = 1;
         // matrix[w][v] = 1;
         edge++;

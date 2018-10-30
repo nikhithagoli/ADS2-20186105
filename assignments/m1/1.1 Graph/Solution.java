@@ -46,7 +46,7 @@ class Graphlist implements Graph {
 		if(edge == 0) {
 			System.out.println("No edges");
 		} else {
-			for(int i = 0; i < vertex; i++) {
+			for(int i = 0; i < vertex-1; i++) {
 				String str = "";
 				str += cities[i] + ": ";
 				for(int each: adj[i]) {

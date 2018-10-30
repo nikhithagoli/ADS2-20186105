@@ -93,7 +93,7 @@ class Graphmatrix {
             return;
         }*/
         matrix[v][w] = 1;
-        // matrix[w][v] = 1;
+        matrix[w][v] = 1;
         edge++;
     }
     /**

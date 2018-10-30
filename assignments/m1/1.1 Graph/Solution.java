@@ -80,7 +80,7 @@ class Graphlist implements Graph {
         }
         adj[v].add(w);
         adj[w].add(v);
-        edge ++;
+        edge++;
     }
     /**
      * adj.
@@ -199,7 +199,7 @@ class Graphmatrix implements Graph {
         }
         matrix[v][w] = 1;
         matrix[w][v] = 1;
-        edge ++;
+        edge++;
     }
     /**
      * adj.
@@ -285,17 +285,21 @@ final class Solution {
             Graphlist l = new Graphlist(v, e, cities);
             for (int k = 0; k < e; k++) {
                 String[] tokens = sc.nextLine().split(" ");
-                l.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+                l.addEdge(Integer.parseInt(tokens[0]),
+                    Integer.parseInt(tokens[1]));
             }
-            System.out.println(l.vertices() + " vertices, " + l.edges() + " edges");
+            System.out.println(l.vertices() +
+                 " vertices, " + l.edges() + " edges");
             l.print();
         } else {
             Graphmatrix m = new Graphmatrix(v, e, cities);
             for (int k = 0; k < e; k++) {
                 String[] tokens = sc.nextLine().split(" ");
-                m.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
+                m.addEdge(Integer.parseInt(tokens[0]),
+                     Integer.parseInt(tokens[1]));
             }
-            System.out.println(m.vertices() + " vertices, " + m.edges() + " edges");
+            System.out.println(m.vertices() +
+                 " vertices, " + m.edges() + " edges");
             m.print();
         }
     }

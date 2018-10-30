@@ -48,7 +48,7 @@ class Graphlist implements Graph {
 		} else {
 			for(int i = 0; i < vertex; i++) {
 				String str = "";
-				str += cities[i] + ":";
+				str += cities[i] + ": ";
 				for(int each: adj[i]) {
 					str += cities[each] + " ";
 				}
@@ -108,7 +108,7 @@ class Solution {
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
 		String[] cities = sc.nextLine().split(",");
-		System.out.println(v + " vertices, " + e + "edges"); 
+		System.out.println(v + " vertices, " + e + " edges"); 
 		if(type.equals("List")) {
 			Graphlist l = new Graphlist(v, e, cities);
 			for(int k = 0; k < e; k++) {

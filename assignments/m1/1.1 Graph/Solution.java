@@ -94,13 +94,18 @@ class Graphmatrix implements Graph {
 		if (edges == 0) {
 			System.out.println("No edges");
 		} else{
-			for(int i = 0; i < vertices; i++) {
+			for(int i = 0; i < vertices-1; i++) {
 				String s = "";
 				for(int each: matrix[i]) {
 					s += each + " ";
 				}
-				System.out.println(s.substring(0, s.length()-1));
+				System.out.println(s);
 			}
+			String s = "";
+				for(int each: matrix[vertices - 1]) {
+					s += each + " ";
+				}
+				System.out.println(s.substring(0, s.length()-1));
 		}
 	}
 }

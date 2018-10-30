@@ -94,9 +94,5 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:146:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:157:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:164: Line is longer than 80 characters (found 101). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:169:21: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:169:22: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:169:26: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:169:27: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 5 errors.

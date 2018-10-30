@@ -14,9 +14,10 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -9
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -24,9 +25,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -45,9 +47,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -3
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -55,9 +58,10 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -3
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -65,9 +69,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -75,9 +80,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -85,9 +91,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -6
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -95,9 +102,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -2
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -105,9 +113,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -8
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -115,9 +124,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -7
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -125,9 +135,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -7
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -135,9 +146,10 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -9
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -145,9 +157,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -8
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -155,9 +168,10 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -45
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -165,9 +179,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -21
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -175,9 +190,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -25
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -185,9 +201,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -28
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -195,9 +212,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -6
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -205,9 +223,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -15
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -215,9 +234,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -225,9 +245,10 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -235,8 +256,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -34
-	at Percolation.open(Solution.java:90)
-	at Solution.main(Solution.java:169)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
+	at Percolation.percolates(Solution.java:137)
+	at Solution.main(Solution.java:173)
 ----------------------------------------
 

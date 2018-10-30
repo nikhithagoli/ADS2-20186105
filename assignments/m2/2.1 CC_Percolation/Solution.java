@@ -166,7 +166,7 @@ class Solution {
 		while (sc.hasNext()) {
             int r = sc.nextInt();
             int c = sc.nextInt();
-            p.open(r-1, c-1);
+            p.open(r, c);
         }
 		// Connectedcomponents cc = new Connectedcomponents(grid);
 		// System.out.println(cc.ispercolated(grid));

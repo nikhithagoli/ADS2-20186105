@@ -22,7 +22,7 @@ class Graphlist implements Graph {
 		}
 	}
 	public void addEdge(int v, int w) {
-		if(v == w) {
+		if(v == w || hasEdge(v, w)) {
 			return;
 		}
 		adj[v].add(w);
@@ -39,8 +39,13 @@ class Graphlist implements Graph {
 		return this.edge;
 	}
 	public boolean hasEdge(int v, int w) {
-		while(adj[v].iterator().hasNext()) {
+		/**while(adj[v].iterator().hasNext()) {
 			if(adj[v].iterator().next() == w) {
+				return true;
+			}
+		}**/
+		for(int each: adj[v]) {
+			if(each == w) {
 				return true;
 			}
 		}

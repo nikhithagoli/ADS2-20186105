@@ -15,15 +15,19 @@ class Graphlist implements Graph {
 	public Graphlist(int v, int e, String[] c) {
 		cities = c;
 		this.vertex = v;
-		this.edge = e;
+		this.edge = 0;
 		adj = (Bag<Integer>[]) new Bag[v];
 		for(int i = 0; i < v; i++) {
 			adj[i] = new Bag<Integer>();
 		}
 	}
 	public void addEdge(int v, int w) {
+		if(v == w) {
+			return;
+		}
 		adj[v].add(w);
 		adj[w].add(v);
+		edge ++;
 	}
 	public Iterable<Integer> adj(int v) {
 		return adj[v];
@@ -72,7 +76,7 @@ class Graphmatrix implements Graph {
 		cities = c;
 		matrix = new int[v][v];
 		this.vertices = v;
-		this.edges = e;
+		this.edges = 0;
 		for(int i = 0; i < v; i++) {
 			for(int j = 0; j < v; j++) {
 				matrix[i][j] = 0;
@@ -81,8 +85,12 @@ class Graphmatrix implements Graph {
 		}
 	}
 	public void addEdge(int v, int w) {
+		if(v == w) {
+			return;
+		}
 		matrix[v][w] = 1;
 		matrix[w][v] = 1;
+		edges ++;
 	}
 	public int[] adj(int v) {
 		return matrix[v];
@@ -122,13 +130,13 @@ class Solution {
 		int v = Integer.parseInt(sc.nextLine());
 		int e = Integer.parseInt(sc.nextLine());
 		String[] cities = sc.nextLine().split(",");
-		System.out.println(v + " vertices, " + e + " edges"); 
 		if(type.equals("List")) {
 			Graphlist l = new Graphlist(v, e, cities);
 			for(int k = 0; k < e; k++) {
 				String[] tokens = sc.nextLine().split(" ");
 				l.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 			}
+			System.out.println(l.V() + " vertices, " + l.E() + " edges"); 
 			l.print();
 		} else {
 			Graphmatrix m = new Graphmatrix(v, e, cities);
@@ -136,6 +144,7 @@ class Solution {
 				String[] tokens = sc.nextLine().split(" ");
 				m.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 			}
+			System.out.println(m.V() + " vertices, " + m.E() + " edges"); 
 			m.print();
 		}
 	}

@@ -115,6 +115,8 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:111: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:112:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:114:28: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:116: Line is longer than 80 characters (found 100). [LineLength]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:121:28: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m1\1.1 Graph\Solution.java:123: Line is longer than 80 characters (found 100). [LineLength]
 Audit done.
-Checkstyle ends with 86 errors.
+Checkstyle ends with 88 errors.

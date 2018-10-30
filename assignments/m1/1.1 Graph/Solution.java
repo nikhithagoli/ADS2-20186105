@@ -112,15 +112,15 @@ class Solution {
 		if(type.equals("List")) {
 			Graphlist l = new Graphlist(v, e, cities);
 			for(int k = 0; k < e; k++) {
-				l.addEdge(sc.nextInt(), sc.nextInt());
-				sc.nextLine();
+				String[] tokens = sc.nextLine().split(" ");
+				l.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 			}
 			l.print();
 		} else {
 			Graphmatrix m = new Graphmatrix(v, e, cities);
 			for(int k = 0; k < e; k++) {
-				m.addEdge(sc.nextInt(), sc.nextInt());
-				sc.nextLine();
+				String[] tokens = sc.nextLine().split(" ");
+				m.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
 			}
 			m.print();
 		}

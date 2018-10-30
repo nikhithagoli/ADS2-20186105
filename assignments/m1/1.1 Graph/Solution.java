@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 /**
  * Interface for graph.
  */
@@ -9,13 +8,13 @@ interface Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V();
+    public int vertices();
     /**
      * no of edges.
      *
      * @return     { description_of_the_return_value }
      */
-    public int E();
+    public int edges();
     /**
      * Adds an edge.
      *
@@ -98,7 +97,7 @@ class Graphlist implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
+    public int vertices() {
         return this.vertex;
     }
     /**
@@ -106,7 +105,7 @@ class Graphlist implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
+    public int edges() {
         return this.edge;
     }
     /**
@@ -164,11 +163,11 @@ class Graphmatrix implements Graph {
     /**
      * no of vertices.
      */
-    private int vertices;
+    private int vertex;
     /**
      * edges count.
      */
-    private int edges;
+    private int edge;
     /**
      * Constructs the object.
      *
@@ -179,8 +178,8 @@ class Graphmatrix implements Graph {
     public Graphmatrix(final int v, final int e, final String[] c) {
         cities = c;
         matrix = new int[v][v];
-        this.vertices = v;
-        this.edges = 0;
+        this.vertex = v;
+        this.edge = 0;
         for (int i = 0; i < v; i++) {
             for (int j = 0; j < v; j++) {
                 matrix[i][j] = 0;
@@ -200,7 +199,7 @@ class Graphmatrix implements Graph {
         }
         matrix[v][w] = 1;
         matrix[w][v] = 1;
-        edges ++;
+        edge ++;
     }
     /**
      * adj.
@@ -217,16 +216,16 @@ class Graphmatrix implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public int V() {
-        return this.vertices;
+    public int vertices() {
+        return this.vertex;
     }
     /**
      * no of edges.
      *
      * @return     { description_of_the_return_value }
      */
-    public int E() {
-        return this.edges;
+    public int edges() {
+        return this.edge;
     }
     /**
      * Determines if it has edge.
@@ -243,10 +242,10 @@ class Graphmatrix implements Graph {
      * prints.
      */
     public void print() {
-        if (edges == 0) {
+        if (edge == 0) {
             System.out.println("No edges");
         } else {
-            for (int i = 0; i < vertices - 1; i++) {
+            for (int i = 0; i < vertex - 1; i++) {
                 String s = "";
                 for (int each : matrix[i]) {
                     s += each + " ";
@@ -254,7 +253,7 @@ class Graphmatrix implements Graph {
                 System.out.println(s);
             }
             String s = "";
-            for (int each : matrix[vertices - 1]) {
+            for (int each : matrix[vertex - 1]) {
                 s += each + " ";
             }
             System.out.println(s.substring(0, s.length() - 1));
@@ -288,7 +287,7 @@ final class Solution {
                 String[] tokens = sc.nextLine().split(" ");
                 l.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
             }
-            System.out.println(l.V() + " vertices, " + l.E() + " edges");
+            System.out.println(l.vertices() + " vertices, " + l.edges() + " edges");
             l.print();
         } else {
             Graphmatrix m = new Graphmatrix(v, e, cities);
@@ -296,7 +295,7 @@ final class Solution {
                 String[] tokens = sc.nextLine().split(" ");
                 m.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[1]));
             }
-            System.out.println(m.V() + " vertices, " + m.E() + " edges");
+            System.out.println(m.vertices() + " vertices, " + m.edges() + " edges");
             m.print();
         }
     }

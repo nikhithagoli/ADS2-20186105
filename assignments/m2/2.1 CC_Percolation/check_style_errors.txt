@@ -1,0 +1,23 @@
+Starting audit...
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:9:31: Array brackets at illegal position. [ArrayTypeStyle]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:14:9: Missing a Javadoc comment. [JavadocVariable]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:22:47: Expected @param tag for 'graph'. [JavadocMethod]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:27:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:33:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:33:39: Parameter v should be final. [FinalParameters]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:43:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:43:30: Parameter g should be final. [FinalParameters]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:44:48: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:44:49: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:134: Class Solution should be declared as final. [FinalClass]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:146:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:152: Line is longer than 80 characters (found 101). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:157:27: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:157:28: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:157:32: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Solution.java:157:33: '-' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 20 errors.

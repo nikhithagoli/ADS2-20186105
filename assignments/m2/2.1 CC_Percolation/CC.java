@@ -1,3 +1,6 @@
+/**
+ * Class for cc.
+ */
 public class CC {
     /**
      * marked array.

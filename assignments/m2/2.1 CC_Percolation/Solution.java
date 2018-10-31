@@ -35,7 +35,7 @@ class Percolation {
     /**
      * Constructs the object.
      *
-     * @param      n     { parameter_description }
+     * @param      n1     { parameter_description }
      */
     Percolation(final int n1) {
         n = n1;
@@ -45,7 +45,6 @@ class Percolation {
         bottom = size + 1;
         connected = new boolean[n][n];
         g = new Graph(size + 2);
-        
     }
     /**
      * open.

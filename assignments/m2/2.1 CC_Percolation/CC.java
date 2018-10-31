@@ -10,10 +10,10 @@ public class CC {
      * @param G the undirected graph
      */
     public CC(Graph G) {
-        marked = new boolean[G.V()];
-        id = new int[G.V()];
-        size = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+        marked = new boolean[G.vertices()];
+        id = new int[G.vertices()];
+        size = new int[G.vertices()];
+        for (int v = 0; v < G.vertices(); v++) {
             if (!marked[v]) {
                 dfs(G, v);
                 count++;
@@ -105,8 +105,8 @@ public class CC {
 
     // throw an IllegalArgumentException unless {@code 0 <= v < V}
     private void validateVertex(int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        int vertices = marked.length;
+        if (v < 0 || v >= vertices)
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertices-1));
     }
 }

@@ -1,65 +1,10 @@
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:4: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:9: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:10:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:11:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:46:21: Parameter item should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:56: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:58: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:65: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:66:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:68:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:68:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:68:29: Parameter first should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:68:40: 'first' hides a field. [HiddenField]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:72: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:72:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:73: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:73:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:75:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Bag.java:76: 'if' construct must use '{}'s. [NeedBraces]
 Audit done.
-Checkstyle ends with 22 errors.
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:2:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:3: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:3:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:4: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:4:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:5:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:12:15: Parameter G should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:12:21: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:25:22: Parameter G should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:25:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:25:31: Parameter v should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:38: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:41: Line is longer than 80 characters (found 86). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:44:19: Parameter v should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:50: Line is longer than 80 characters (found 93). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:53: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:56:21: Parameter v should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:81:30: Parameter v should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:81:37: Parameter w should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:100:33: Parameter v should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:100:40: Parameter w should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:107:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:107:33: Parameter v should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:109: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:110: Line is longer than 80 characters (found 104). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:110:100: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\CC.java:110:101: '-' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 30 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m2\2.1 CC_Percolation\Graph.java:57:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.

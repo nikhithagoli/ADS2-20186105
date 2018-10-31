@@ -53,7 +53,11 @@ public class Graph {
         return edges;
     }
 
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * validating Vertex.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
         if (v < 0 || v >= vertices) {
             throw new IllegalArgumentException("vertex "

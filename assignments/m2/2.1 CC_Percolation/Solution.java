@@ -128,7 +128,7 @@ class Percolation {
      * @return     The index.
      */
     private int getIndex(final int row, final int col) {
-        return n * (row - 1) + col;
+        return n * (row - 1) + col - 1;
     }
 }
 /**

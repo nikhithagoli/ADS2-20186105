@@ -38,12 +38,12 @@ Your Output:
 true
 ----------------------------------------
 
-########## Testcase 5: Failed ##########
+########## Testcase 5: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-true
+false
 ----------------------------------------
 
 ########## Testcase 6: Passed ##########

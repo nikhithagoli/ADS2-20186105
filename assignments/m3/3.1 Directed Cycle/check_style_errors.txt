@@ -3,54 +3,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Digraph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\DirectedCycle.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
-Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:8: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:21: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:22: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:23: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:28: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:31: Type Javadoc comment is missing @param <Item> tag. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:32:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:32:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:33:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:36: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:37:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:38:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:52: Expected @return tag. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:59: Expected @return tag. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:66:22: Parameter item should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:66:27: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:78: Expected @return tag. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:79: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:91: Expected @return tag. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:92: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:99: Expected @return tag. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:101: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:105: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:108: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:110: Expected @return tag. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:110:39: '{' at column 39 should have line break after. [LeftCurly]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:113: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:114:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:115: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:115:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:116: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:116:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:118:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:119: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m3\3.1 Directed Cycle\Stack.java:121: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 37 errors.
+Checkstyle ends with 1 errors.

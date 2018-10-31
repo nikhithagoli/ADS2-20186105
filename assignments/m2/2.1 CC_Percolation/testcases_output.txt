@@ -3,9 +3,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -15,9 +14,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -27,9 +25,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -39,9 +36,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -51,9 +47,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -63,9 +58,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -75,9 +69,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -87,9 +80,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -99,9 +91,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -111,9 +102,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -123,9 +113,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -135,9 +124,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -147,9 +135,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -159,9 +146,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -171,9 +157,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -183,9 +168,8 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -195,9 +179,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -207,9 +190,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -219,9 +201,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -231,9 +212,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -243,9 +223,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -255,9 +234,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -267,9 +245,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------
@@ -279,9 +256,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Graph.adj(I)[I
-	at CC.dfs(CC.java:29)
-	at CC.<init>(CC.java:18)
+Exception in thread "main" java.lang.NoSuchMethodError: Graph.vertices()I
+	at CC.<init>(CC.java:13)
 	at Percolation.percolates(Solution.java:119)
 	at Solution.main(Solution.java:158)
 ----------------------------------------

@@ -45,7 +45,7 @@ public class DirectedCycle {
         for (int w : gph.adj(v)) {
             if (cycle != null) {
                 return;
-            } /*else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
                 dfs(gph, w);
             } else if (onStack[w]) {
@@ -56,7 +56,7 @@ public class DirectedCycle {
                 cycle.push(w);
                 cycle.push(v);
                 assert check();
-            }*/
+            }
         }
         onStack[v] = false;
     }

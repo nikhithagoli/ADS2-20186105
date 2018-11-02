@@ -45,13 +45,14 @@ public class WordNet {
             }
             if (dc.hasCycle()) {
                 throw new IllegalArgumentException("Cycle detected");
-            } else {
-                System.out.println(graph);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
+    public void print() {
+        System.out.println(graph);
+    } 
     public Iterable<String> nouns() {
         return (Iterable<String>) synsets;
     }

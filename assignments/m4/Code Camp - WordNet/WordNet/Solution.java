@@ -8,6 +8,7 @@ class Solution {
 		try {
 			if (mode.equals("Graph")) {
 				WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);
+				wordnet.print();
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

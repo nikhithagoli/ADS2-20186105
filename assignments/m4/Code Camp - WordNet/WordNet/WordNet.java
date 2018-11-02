@@ -7,8 +7,8 @@ public class WordNet {
     int size;
     Digraph graph;
     DirectedCycle dc;
+    int outdegreecount;
     public WordNet(String s, String h) {
-        try {
             In syn = new In("E:\\basic\\ADS2-20186105\\ADS2-20186105\\assignments\\m4\\Code Camp - WordNet\\WordNet\\Files\\" + s);
             size = 0;
             while (syn.hasNextLine()) {
@@ -34,24 +34,20 @@ public class WordNet {
                 }
             }
             dc = new DirectedCycle(graph);
-            int count = 0;
             for (int i = 0; i < size; i++) {
                 if(graph.outdegree(i) == 0) {
-                    count++;
+                    outdegreecount++;
                 } 
             }
-            if(count >  1) {
-                throw new IllegalArgumentException("Multiple roots");
-            }
-            if (dc.hasCycle()) {
-                throw new IllegalArgumentException("Cycle detected");
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
     }
     public void print() {
-        System.out.println(graph);
+        if (dc.hasCycle()) {
+            throw new IllegalArgumentException("Cycle detected");
+        } else if (outdegreecount > 1) {
+            throw new IllegalArgumentException("Multiple roots");
+        } else {
+            System.out.println(graph.toString());
+        }
     } 
     public Iterable<String> nouns() {
         return (Iterable<String>) synsets;

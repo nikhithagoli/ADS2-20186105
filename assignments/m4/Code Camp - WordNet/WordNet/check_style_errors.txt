@@ -235,12 +235,12 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:3:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:7:30: '=' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:10: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17:38: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:18: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:19: Line is longer than 80 characters (found 96). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:19:43: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:20: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:17: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:18:38: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:19: Line is longer than 80 characters (found 82). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:20: Line is longer than 80 characters (found 96). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:20:43: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:21: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
 Checkstyle ends with 14 errors.
 Starting audit...

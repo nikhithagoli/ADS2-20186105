@@ -14,6 +14,7 @@ class Solution {
 			System.out.println(e.getMessage());
 		}
 		if (mode.equals("Queries")) {
+				WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);
 				while(sc.hasNextLine()) {
 					String[] input = sc.nextLine().split(" ");
 					if(input[0].equals("null") || input[1].equals("null")) {
@@ -21,7 +22,6 @@ class Solution {
 						return;
 					}
 				}
-				WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);
 		}
 	}
 }

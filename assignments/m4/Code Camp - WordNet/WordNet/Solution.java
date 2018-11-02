@@ -5,9 +5,12 @@ class Solution {
 		String synsetsfile = sc.nextLine();
 		String hypernymsfile = sc.nextLine();
 		String mode =sc.nextLine();
-		if(mode.equals("Graph")) {
-			WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);
+		try {
+			if (mode.equals("Graph")) {
+				WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);
+			}
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
 		}
-
 	}
 }

@@ -32,11 +32,15 @@ public class WordNet {
                 }
             }
             DirectedCycle dc = new DirectedCycle(graph);
-            /*for (int i = 0; i < size; i++) {
+            int count = 0;
+            for (int i = 0; i < size; i++) {
                 if(graph.outdegree(i) == 0) {
-                    throw new IllegalArgumentException("Multiple roots");
+                    count++;
                 } 
-            }*/
+            }
+            if(count >  1) {
+                throw new IllegalArgumentException("Multiple roots");
+            }
             if (dc.hasCycle()) {
                 throw new IllegalArgumentException("Cycle detected");
             } else {

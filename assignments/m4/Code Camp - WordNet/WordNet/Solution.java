@@ -18,7 +18,7 @@ class Solution {
 				WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);
 				while (sc.hasNextLine()) {
 					String[] input = sc.nextLine().split(" ");
-					if(input[0].equals("null") || input[1].equals("null")) {
+					if(input[0].equals("null")) {
 						throw new IllegalArgumentException("IllegalArgumentException");
 					}
 					System.out.println("distance = " + wordnet.distance(input[0], input[1]) + ", ancestor = " + wordnet.sap(input[0], input[1]));

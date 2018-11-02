@@ -152,36 +152,50 @@ Your Output:
 7:
 ----------------------------------------
 
-########## Testcase 9: Passed ##########
+########## Testcase 9: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
 Multiple roots
+6 vertices, 5 edges 
+0: 
+1: 2 0 
+2: 3 
+3: 4 
+4: 5 
+5:
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
 Multiple roots
+6 vertices, 4 edges 
+0: 1 
+1: 2 
+2: 3 
+3: 
+4: 5 
+5:
 ----------------------------------------
 
-########## Testcase 11: Failed ##########
+########## Testcase 11: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-
+IllegalArgumentException
 ----------------------------------------
 
-########## Testcase 12: Failed ##########
+########## Testcase 12: Passed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-
+IllegalArgumentException
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -208,11 +222,15 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 14: Passed ##########
+########## Testcase 14: Failed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
 Cycle detected
+3 vertices, 2 edges 
+0: 1 
+1: 0 
+2:
 ----------------------------------------
 

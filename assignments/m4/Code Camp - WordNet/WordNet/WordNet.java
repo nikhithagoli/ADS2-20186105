@@ -5,6 +5,8 @@ import java.util.Arrays;
 public class WordNet {
     HashMap<Integer, ArrayList<String>> synsets;
     int size;
+    Digraph graph;
+    DirectedCycle dc;
     public WordNet(String s, String h) {
         try {
             In syn = new In("E:\\basic\\ADS2-20186105\\ADS2-20186105\\assignments\\m4\\Code Camp - WordNet\\WordNet\\Files\\" + s);
@@ -23,7 +25,7 @@ public class WordNet {
                 synsets.put(Integer.parseInt(tokens[0]), l);
             }
             In hype = new In("E:\\basic\\ADS2-20186105\\ADS2-20186105\\assignments\\m4\\Code Camp - WordNet\\WordNet\\Files\\" + h);
-            Digraph graph = new Digraph(size);
+            graph = new Digraph(size);
             while (hype.hasNextLine()) {
                 String line = hype.readLine();
                 String[] tokens = line.split(",");
@@ -31,7 +33,7 @@ public class WordNet {
                     graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
                 }
             }
-            DirectedCycle dc = new DirectedCycle(graph);
+            dc = new DirectedCycle(graph);
             int count = 0;
             for (int i = 0; i < size; i++) {
                 if(graph.outdegree(i) == 0) {
@@ -43,13 +45,14 @@ public class WordNet {
             }
             if (dc.hasCycle()) {
                 throw new IllegalArgumentException("Cycle detected");
-            } else {
-                System.out.println(graph);
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
     }
+    public void print() {
+        System.out.println(graph);
+    } 
     public Iterable<String> nouns() {
         return (Iterable<String>) synsets;
     }

@@ -13,15 +13,19 @@ class Solution {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
-		if (mode.equals("Queries")) {
+		try {
+			if (mode.equals("Queries")) {
 				WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);
-				while(sc.hasNextLine()) {
+				while (sc.hasNextLine()) {
 					String[] input = sc.nextLine().split(" ");
 					if(input[0].equals("null") || input[1].equals("null")) {
-						System.out.println("IllegalArgumentException");
-						return;
+						throw new IllegalArgumentException("IllegalArgumentException");
 					}
+					System.out.println("distance = " + wordnet.distance(input[0], input[1]) + ", ancestor = " + wordnet.sap(input[0], input[1]));
 				}
-		}
+			}
+		} catch (Exception e) {
+		                System.out.println(e.getMessage());
+	    }
 	}
 }

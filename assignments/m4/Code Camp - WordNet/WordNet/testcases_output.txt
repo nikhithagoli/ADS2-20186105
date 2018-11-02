@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 15 vertices, 14 edges 
 0: 
@@ -18,7 +18,22 @@ Expected Output:
 14: 13
 
 Your Output: 
-Multiple roots
+15 vertices, 14 edges 
+0: 
+1: 0 
+2: 0 
+3: 1 
+4: 1 
+5: 1 
+6: 10 
+7: 3 
+8: 3 
+9: 5 
+10: 5 
+11: 10 
+12: 10 
+13: 6 
+14: 13
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -113,7 +128,7 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 8: Failed ##########
+########## Testcase 8: Passed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -126,23 +141,43 @@ Expected Output:
 7:
 
 Your Output: 
-Multiple roots
+8 vertices, 17 edges 
+0: 7 6 5 4 3 1 
+1: 7 
+2: 7 6 5 4 3 1 
+3: 7 
+4: 7 
+5: 7 
+6: 7 
+7:
 ----------------------------------------
 
-########## Testcase 9: Passed ##########
+########## Testcase 9: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Multiple roots
+6 vertices, 5 edges 
+0: 
+1: 2 0 
+2: 3 
+3: 4 
+4: 5 
+5:
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Multiple roots
+6 vertices, 4 edges 
+0: 1 
+1: 2 
+2: 3 
+3: 
+4: 5 
+5:
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -185,11 +220,11 @@ Your Output:
 
 ----------------------------------------
 
-########## Testcase 14: Failed ##########
+########## Testcase 14: Passed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-Multiple roots
+Cycle detected
 ----------------------------------------
 

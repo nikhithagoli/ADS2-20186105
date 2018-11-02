@@ -11,7 +11,7 @@ public class WordNet {
     int outdegreecount;
     SAP sap;
     public WordNet(String s, String h) {
-        In syn = new In("E:\\basic\\ADS2-20186105\\ADS2-20186105\\assignments\\m4\\Code Camp - WordNet\\WordNet\\Files\\" + s);
+        In syn = new In("Files//" + s);
         size = 0;
         while (syn.hasNextLine()) {
             String line = syn.readLine();

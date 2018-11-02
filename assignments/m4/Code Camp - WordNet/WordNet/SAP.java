@@ -27,8 +27,6 @@ public class SAP {
         } else {
             return -1;
         }
-
-
     }
 
     // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path

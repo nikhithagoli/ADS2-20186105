@@ -6,6 +6,9 @@ public class SAP {
     public SAP(Digraph G) {
         this.dg = G;
         bfs = new BreadthFirstDirectedPaths[this.dg.vertices()];
+        for(int i = 0; i < dg.vertices(); i++) {
+            bfs[i] = new BreadthFirstDirectedPaths(dg, i);
+        }
     }
 
     // length of shortest ancestral path between v and w; -1 if no such path

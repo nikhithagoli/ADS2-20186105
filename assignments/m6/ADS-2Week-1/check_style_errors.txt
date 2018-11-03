@@ -298,6 +298,8 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:24:28: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:25:36: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:26:43: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:27: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:27:63: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:35:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:35:29: Parameter v should be final. [FinalParameters]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:38:9: Missing a Javadoc comment. [JavadocMethod]
@@ -316,7 +318,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:71:36: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:85: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

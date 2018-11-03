@@ -24,7 +24,7 @@ class PageRank {
 			for(int j = 0; j < g.V(); j++) {
 				for(int each: g.adj(j)) {
 					if(each == i) {
-						pr += list[j] / g.outdegree(j);
+						pr += (double)(list[j] / g.outdegree(j));
 					}
 				}
 			}

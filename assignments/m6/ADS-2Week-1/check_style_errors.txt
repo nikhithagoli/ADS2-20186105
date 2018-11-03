@@ -289,6 +289,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:3:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:4:18: Parameter g should be final. [FinalParameters]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:7:59: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:9:37: '1000' is a magic number. [MagicNumber]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:13:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:13:39: Parameter list should be final. [FinalParameters]
@@ -317,7 +318,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:64:36: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:78: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
-Checkstyle ends with 33 errors.
+Checkstyle ends with 34 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

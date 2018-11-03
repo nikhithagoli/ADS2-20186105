@@ -59,6 +59,13 @@ public class Solution {
 		}
 		System.out.println(graph);
 		// Create page rank object and pass the graph object to the constructor
+		for(int i = 0; i < graph.V(); i++) {
+			if(graph.outdegree(i) == 0) {
+				for(int k = 0; k < graph.V(); k++) {
+					graph.addEdge(i, k);
+				}
+			}
+		}
 		PageRank pr = new PageRank(graph);
 		// print the page rank object
 		System.out.println(pr);

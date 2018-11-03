@@ -83,7 +83,7 @@ public class Solution {
 
 		// instantiate web search object
 		// and pass the page rank object and the file path to the constructor
-
+		
 		// read the search queries from std in
 		// remove the q= prefix and extract the search word
 		// pass the word to iAmFeelingLucky method of web search

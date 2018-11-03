@@ -5,7 +5,7 @@ class PageRank {
 	PageRank(Digraph g) {
 		prlist = new Double[g.V()];
 		for (int i = 0; i < g.V(); i++) {
-				prlist[i] = 1.0 / (double)(g.V());
+				prlist[i] = 1.0 / (g.V());
 		}
 		for (int k = 0; k < 1000; k++) {
 			Double[] x = prcalculation(prlist, g);

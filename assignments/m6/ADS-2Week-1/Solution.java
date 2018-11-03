@@ -1,14 +1,14 @@
 import java.util.Scanner;
 import java.util.Arrays;
 class PageRank {
-	private Long[] prlist;
+	private Double[] prlist;
 	PageRank(Digraph g) {
-		prlist = new Long[g.V()];
+		prlist = new Double[g.V()];
 		for (int i = 0; i < g.V(); i++) {
-				prlist[i] = (long)1.0 / (g.V());
+				prlist[i] = 1.0 / (g.V());
 		}
 		for (int k = 0; k < 1000; k++) {
-			Long[] x = prcalculation(prlist, g);
+			Double[] x = prcalculation(prlist, g);
 			if(Arrays.toString(prlist).equals(Arrays.toString(x))) {
 				break;
 			} else {
@@ -17,14 +17,14 @@ class PageRank {
 
 		}
 	}
-	public Long[] prcalculation(Long[] list, Digraph g) {
-		Long[] l = new Long[g.V()];
+	public Double[] prcalculation(Double[] list, Digraph g) {
+		Double[] l = new Double[g.V()];
 		for(int i = 0; i < g.V(); i++) {
-			Long pr = (long)0;
+			Double pr = 0.0;
 			for(int j = 0; j < g.V(); j++) {
 				for(int each: g.adj(j)) {
 					if(each == i) {
-						pr += (Long)(list[j] / g.outdegree(j));
+						pr += (double)(list[j] / g.outdegree(j));
 					}
 				}
 			}
@@ -32,7 +32,7 @@ class PageRank {
 		}
 		return l;
 	}
-	public Long getPR(int v) {
+	public Double getPR(int v) {
 		return prlist[v];
 	}
 	public String toString() {

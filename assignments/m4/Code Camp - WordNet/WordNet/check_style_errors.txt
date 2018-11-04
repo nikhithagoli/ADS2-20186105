@@ -363,7 +363,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:8:75: Empty statement. [EmptyStatement]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:18: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:20: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:21:43: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:21:43: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:22: Line is longer than 80 characters (found 111). [LineLength]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Solution.java:24: Line is longer than 80 characters (found 165). [LineLength]
 Audit done.

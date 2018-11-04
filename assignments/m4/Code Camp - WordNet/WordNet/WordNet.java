@@ -98,7 +98,7 @@ public class WordNet {
         } else if (graph.noOfOutdegree() > 1) {
             throw new IllegalArgumentException("Multiple roots");
         } else {
-            System.out.println(graph.toString());
+            System.out.println(graph);
         }
     }
     public Iterable<String> nouns() {

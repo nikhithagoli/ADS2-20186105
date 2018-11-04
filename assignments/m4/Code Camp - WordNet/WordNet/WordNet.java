@@ -7,7 +7,6 @@ public class WordNet {
     HashMap<String, ArrayList<Integer>> ids;
     int size;
     Digraph graph;
-    DirectedCycle dc;
     int outdegreecount;
     SAP sap;
     public WordNet(String s, String h) {
@@ -19,7 +18,7 @@ public class WordNet {
         }
         synsets = new HashMap<Integer, ArrayList<String>>();
         ids = new HashMap<String, ArrayList<Integer>>(); 
-        syn = new In("E:\\basic\\ADS2-20186105\\ADS2-20186105\\assignments\\m4\\Code Camp - WordNet\\WordNet\\Files\\" + s);
+        syn = new In("Files\\" + s);
         while (syn.hasNextLine()) {
             String line = syn.readLine();
             String[] tokens = line.split(",");
@@ -47,7 +46,6 @@ public class WordNet {
                 graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[i]));
             }
         }
-        dc = new DirectedCycle(graph);
         for (int i = 0; i < size; i++) {
             if (graph.outdegree(i) == 0) {
                 outdegreecount++;
@@ -56,6 +54,7 @@ public class WordNet {
         sap = new SAP(graph);
     }
     public void print() {
+    	DirectedCycle dc = new DirectedCycle(graph);
         if (dc.hasCycle()) {
             throw new IllegalArgumentException("Cycle detected");
         } else if (outdegreecount > 1) {

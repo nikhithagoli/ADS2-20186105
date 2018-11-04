@@ -3,7 +3,42 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 public class WordNet {
-    HashMap<Integer, ArrayList<String>> synsets;
+	HashMap<Integer, String> synsets;
+    HashMap<String, ArrayList<Integer>> ids;
+    int size;
+    Digraph graph;
+    int outdegreecount;
+    SAP sap;
+    public WordNet(String s, String h) {
+        In syn = new In("Files//" + s);
+        size = 0;
+        while (syn.hasNextLine()) {
+            String line = syn.readLine();
+            size++;
+        }
+        synsets = new HashMap<Integer, String>();
+        ids = new HashMap<String, ArrayList<Integer>>(); 
+        syn = new In("Files\\" + s);
+        while (syn.hasNextLine()) {
+            String line = syn.readLine();
+            String[] tokens = line.split(",");
+            String[] words = tokens[1].split(" ");
+            for(String each: words) {
+                if(ids.containsKey(each)) {
+                    ArrayList<Integer> a = ids.get(each);
+                    a.add(Integer.parseInt(tokens[0]));
+                    ids.put(each, a);
+                } else {
+                    ArrayList<Integer> a = new ArrayList<Integer>();
+                    a.add(Integer.parseInt(tokens[0]));
+                    ids.put(each, a);
+                }
+            }
+            // ArrayList<String> l = new ArrayList<String>(Arrays.asList(words));
+            synsets.put(Integer.parseInt(tokens[0]), tokens[1]);
+        }
+     
+    /*HashMap<Integer, ArrayList<String>> synsets;
     HashMap<String, ArrayList<Integer>> ids;
     int size;
     Digraph graph;
@@ -36,8 +71,8 @@ public class WordNet {
             }
             ArrayList<String> l = new ArrayList<String>(Arrays.asList(words));
             synsets.put(Integer.parseInt(tokens[0]), l);
-        }
-        In hype = new In("E:\\basic\\ADS2-20186105\\ADS2-20186105\\assignments\\m4\\Code Camp - WordNet\\WordNet\\Files\\" + h);
+        }*/
+        In hype = new In("Files\\" + h);
         graph = new Digraph(size);
         while (hype.hasNextLine()) {
             String line = hype.readLine();

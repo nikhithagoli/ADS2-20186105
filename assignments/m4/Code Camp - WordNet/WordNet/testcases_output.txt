@@ -244,7 +244,7 @@ Your Output:
 Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:15)
 	at SAP.<init>(SAP.java:10)
-	at WordNet.<init>(WordNet.java:37)
+	at WordNet.<init>(WordNet.java:47)
 	at Solution.main(Solution.java:8)
 ----------------------------------------
 

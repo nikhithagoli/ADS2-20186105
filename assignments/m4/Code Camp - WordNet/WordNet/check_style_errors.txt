@@ -331,7 +331,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:6:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:6:16: Parameter G should be final. [FinalParameters]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:6:24: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:9:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:9:12: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:15:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:15:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\SAP.java:20:26: '<' is not followed by whitespace. [WhitespaceAround]

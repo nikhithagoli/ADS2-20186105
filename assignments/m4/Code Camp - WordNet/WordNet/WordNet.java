@@ -1,12 +1,9 @@
 import java.util.HashMap;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Arrays;
 public class WordNet {
 	private HashMap<Integer, String> synsets;
     private HashMap<String, ArrayList<Integer>> ids;
     private Digraph graph;
-    private int outdegreecount;
     private SAP sap;
     public WordNet(String s, String h) {
         In syn = new In("Files//" + s);

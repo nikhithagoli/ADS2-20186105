@@ -5,10 +5,9 @@ class Solution {
 		String synsetsfile = sc.nextLine();
 		String hypernymsfile = sc.nextLine();
 		String mode =sc.nextLine();
-		WordNet wordnet;
+		WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);;
 		try {
 			if (mode.equals("Graph")) {
-				wordnet = new WordNet(synsetsfile, hypernymsfile);
 				wordnet.print();
 			}
 		} catch (Exception e) {
@@ -16,7 +15,7 @@ class Solution {
 		}
 		try {
 			if (mode.equals("Queries")) {
-				wordnet = new WordNet(synsetsfile, hypernymsfile);
+				// wordnet = new WordNet(synsetsfile, hypernymsfile);
 				while (sc.hasNextLine()) {
 					String[] input = sc.nextLine().split(" ");
 					if(input[0].equals("null")) {

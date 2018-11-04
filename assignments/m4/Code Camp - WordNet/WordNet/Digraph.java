@@ -110,6 +110,15 @@ public class Digraph {
     public int indegree(final int v) {
         return indegree[v];
     }
+     public int noOfOutdegree() {
+        int max = 0;
+        for (int i = 0; i < vertices; i++) {
+            if (outdegree(i) == 0) {
+                max++;
+            }
+        }
+        return max;
+    }
 
     /**
      * Returns the reverse of the digraph.

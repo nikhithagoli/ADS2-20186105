@@ -1,14 +1,14 @@
 import java.util.HashMap;
 import java.util.ArrayList;
 public class WordNet {
-	private HashMap<Integer, String> synsets;
-    private HashMap<String, ArrayList<Integer>> ids;
+	private LinearProbingHashST<Integer, String> synsets;
+    private LinearProbingHashST<String, ArrayList<Integer>> ids;
     private Digraph graph;
     private SAP sap;
     public WordNet(String s, String h) {
         In syn = new In("Files//" + s);
-        synsets = new HashMap<Integer, String>();
-        ids = new HashMap<String, ArrayList<Integer>>(); 
+        synsets = new LinearProbingHashST<Integer, String>();
+        ids = new LinearProbingHashST<String, ArrayList<Integer>>(); 
         syn = new In("Files\\" + s);
         int id = 0;
         while (syn.hasNextLine()) {
@@ -16,7 +16,7 @@ public class WordNet {
             id = Integer.parseInt(tokens[0]);
             String[] words = tokens[1].split(" ");
             for(String each: words) {
-                if(ids.containsKey(each)) {
+                if(ids.contains(each)) {
                     ids.get(each).add(id);
                 } else {
                     ArrayList<Integer> a = new ArrayList<Integer>();
@@ -47,10 +47,10 @@ public class WordNet {
         }
     }
     public Iterable<String> nouns() {
-        return ids.keySet();
+        return ids.keys();
     }
     public boolean isNoun(String word) {
-        return ids.containsKey(word);
+        return ids.contains(word);
     }
     public int distance(String nounA, String nounB) {
         if (!isNoun(nounA) || !isNoun(nounB)) {

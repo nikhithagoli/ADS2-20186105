@@ -3,12 +3,7 @@ Expected Output:
 614708.00000
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:50)
-	at Solution.main(Solution.java:7)
+614708.0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -16,10 +11,7 @@ Expected Output:
 1.81000
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Unknown Source)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:49)
-	at Solution.main(Solution.java:7)
+1.81
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -27,12 +19,7 @@ Expected Output:
 10.46351
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: "0.05731"
-	at java.lang.NumberFormatException.forInputString(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at java.lang.Integer.parseInt(Unknown Source)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:51)
-	at Solution.main(Solution.java:7)
+10.463510000000001
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -40,10 +27,7 @@ Expected Output:
 37.00000
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Unknown Source)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:49)
-	at Solution.main(Solution.java:7)
+37.0
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -51,10 +35,7 @@ Expected Output:
 19.00000
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Unknown Source)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:49)
-	at Solution.main(Solution.java:7)
+19.0
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -62,9 +43,6 @@ Expected Output:
 2.00000
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.util.Scanner.nextLine(Unknown Source)
-	at EdgeWeightedGraph.<init>(EdgeWeightedGraph.java:49)
-	at Solution.main(Solution.java:7)
+2.0
 ----------------------------------------
 

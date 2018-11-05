@@ -1,132 +1,107 @@
 import java.util.Scanner;
-import java.util.Arrays;
+import java.util.HashMap;
+import java.util.ArrayList;
+
+
 class PageRank {
-	private Double[] prlist;
-	Digraph rev;
-	PageRank(Digraph g) {
-		prlist = new Double[g.V()];
-		for (int i = 0; i < g.V(); i++) {
-			if (g.indegree(i) == 0) {
-				prlist[i] = 0.0;
+	HashMap<Integer, Double>map;
+	Digraph graph;
+	Digraph revGraph;
+	private int vertices;
+	PageRank(Digraph dg) {
+		graph=dg;
+		vertices = graph.V();
+		map = new HashMap<Integer, Double>();
+		revGraph = graph.reverse();
+	}
+	public void calculatePr() {
+		Double sum = 0.0;
+		int count = 0;
+		double temp = (double) vertices;
+		double initialPr = (1/temp);
+		for(int i = 0; i < vertices; i++) {
+			if(graph.indegree(i) == 0) {
+				//System.out.println("i am here superman");
+				map.put(i, 0.0);
 			} else {
-				prlist[i] = 1.0 / (g.V());
+				map.put(i, initialPr);
 			}
 		}
-		rev = g.reverse();
-		/*for (int k = 0; k < 1000; k++) {
-			Double[] x = prcalculation(prlist, g);
-			if(Arrays.toString(prlist).equals(Arrays.toString(x))) {
-				break;
-			} else {
-				prlist = x;
-			}
-
-		}*/
-		// prcalculation(prlist, g.reverse());
-		Double[] l = new Double[rev.V()];
-		for (int k = 0; k < 1000; k++) {
-			for (int i = 0; i < rev.V(); i++) {
-				Double pr = 0.0000;
-				/*for(int j = 0; j < g.V(); j++) {
-					for(int each: g.adj(j)) {
-						if(each == i) {
-							pr += (double)(list[j] / g.outdegree(j));
-						}
-					}
-				}*/
-				for (int each : rev.adj(i)) {
-					pr += (double)(prlist[each] / (double) rev.outdegree(each));
+		double[] tempArray = new double[graph.V()];
+		for( int j = 0;j < 1000; j++) {
+			for( int i = 0; i < vertices; i++) {
+				//System.out.println("---------------------------------");
+				sum = 0.0000;
+				for(int each : revGraph.adj(i)) {
+					double value = map.get(each);
+					sum += ((double)value/(double)graph.outdegree(each));
 				}
-				l[i] = pr;
+				tempArray[i] = sum;
 			}
-			for (int i = 0; i < rev.V(); i++) {
-				prlist[i] = l[i];
-			}
-		}
-	}
-	public void prcalculation(Double[] list, Digraph g) {
-		Double[] l = new Double[g.V()];
-		for (int k = 0; k < 1000; k++) {
-			for (int i = 0; i < g.V(); i++) {
-				Double pr = 0.0;
-				/*for(int j = 0; j < g.V(); j++) {
-					for(int each: g.adj(j)) {
-						if(each == i) {
-							pr += (double)(list[j] / g.outdegree(j));
-						}
-					}
-				}*/
-				for (int each : g.adj(i)) {
-					pr += (double)(list[each] / (double) g.outdegree(each));
-				}
-				l[i] = pr;
-			}
-			for (int i = 0; i < g.V(); i++) {
-				list[i] = l[i];
+			for(int i = 0; i < vertices; i++) {
+				map.put(i, tempArray[i]);
 			}
 		}
 	}
-		public Double getPR(int v) {
-			return prlist[v];
-		}
-		public String toString() {
-			String str = "";
-			for (int i = 0; i < prlist.length; i++) {
-				str += i + " - " + prlist[i] + "\n";
-			}
-			return str;
+	public void print() {
+		for( int i = 0; i<map.size(); i++) {
+			System.out.println(i + " - " + map.get(i));
 		}
 	}
+}
 
-	class WebSearch {
+class WebSearch {
 
-	}
+}
 
 
-	public class Solution {
-		public static void main(String[] args) {
-			Scanner sc = new Scanner(System.in);
-			// read the first line of the input to get the number of vertices
-			int n = Integer.parseInt(sc.nextLine());
-			// iterate count of vertices times
-			// to read the adjacency list from std input
-			// and build the graph
-			Digraph graph = new Digraph(n);
-			for (int i = 0; i < n; i++) {
-				String[] tokens = sc.nextLine().split(" ");
-				for (int k = 1 ; k < tokens.length ; k++) {
-					graph.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[k]));
-				}
+public class Solution {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int totalVertices = Integer.parseInt(sc.nextLine());
+		//sc.nextLine();
+		Digraph d = new Digraph(totalVertices);
+		int i = 0;
+		while (i < totalVertices) {
+			String[] arra1 = sc.nextLine().split(" ");
+			for (int j = 1; j < arra1.length; j++) {
+				d.addEdge(Integer.parseInt(arra1[0]), Integer.parseInt(arra1[j]));
 			}
-			System.out.println(graph);
-			// Create page rank object and pass the graph object to the constructor
-			for (int k = 0; k < graph.V(); k++) {
+			i++;
+		}
+		System.out.println(d.toString());
+		for (int k = 0; k < d.V(); k++) {
 			//System.out.println(d.adj(k));
-			if (graph.outdegree(k) == 0) {
+			if (d.outdegree(k) == 0) {
 				//System.out.println("i am here");
-				for (int i = 0; i < graph.V(); i++ ) {
-					if (k != i) {
-						graph.addEdge(k, i);
+				for (int a = 0; a < d.V(); a++ ) {
+					if (k != a) {
+						d.addEdge(k, a);
 					}
 				}
 			}
 		}
-			
-			PageRank pr = new PageRank(graph);
-			// print the page rank object
-			System.out.println(pr);
-			// This part is only for the final test case
-			//
-			// File path to the web content
-			String file = "WebContent.txt";
+		PageRank pr = new PageRank(d);
+		pr.calculatePr();
+		pr.print();
+		//System.out.println(d.toString());
+		//System.out.println(d.reverse());
+		// Create page rank object and pass the graph object to the constructor
 
-			// instantiate web search object
-			// and pass the page rank object and the file path to the constructor
+		// print the page rank object
 
-			// read the search queries from std in
-			// remove the q= prefix and extract the search word
-			// pass the word to iAmFeelingLucky method of web search
-			// print the return value of iAmFeelingLucky
+		// This part is only for the final test case
 
-		}
+		// File path to the web content
+		String file = "WebContent.txt";
+
+		// instantiate web search object
+		// and pass the page rank object and the file path to the constructor
+
+		// read the search queries from std in
+		// remove the q= prefix and extract the search word
+		// pass the word to iAmFeelingLucky method of web search
+		// print the return value of iAmFeelingLucky
+
 	}
+}

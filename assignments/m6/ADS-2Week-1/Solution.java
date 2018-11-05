@@ -21,12 +21,15 @@ class PageRank {
 		Double[] l = new Double[g.V()];
 		for(int i = 0; i < g.V(); i++) {
 			Double pr = 0.0;
-			for(int j = 0; j < g.V(); j++) {
+			/*for(int j = 0; j < g.V(); j++) {
 				for(int each: g.adj(j)) {
 					if(each == i) {
 						pr += (double)(list[j] / g.outdegree(j));
 					}
 				}
+			}*/
+			for(int each: g.reverse().adj(i)) {
+				pr += (double)(list[each] / g.outdegree(each));
 			}
 			l[i] = pr;
 		}

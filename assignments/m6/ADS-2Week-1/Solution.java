@@ -4,48 +4,41 @@ import java.util.ArrayList;
 
 
 class PageRank {
-	HashMap<Integer, Double>map;
+	Double[] prlist;
 	Digraph graph;
-	Digraph revGraph;
-	private int vertices;
-	PageRank(Digraph dg) {
-		graph=dg;
-		vertices = graph.V();
-		map = new HashMap<Integer, Double>();
-		revGraph = graph.reverse();
+	Digraph reversegraph;
+	PageRank(Digraph g) {
+		graph=g;
+		prlist = new Double[g.V()];
+		reversegraph = graph.reverse();
 	}
-	public void calculatePr() {
-		Double sum = 0.0;
-		int count = 0;
-		double temp = (double) vertices;
-		double initialPr = (1/temp);
-		for(int i = 0; i < vertices; i++) {
+	public void prcalculation() {
+		Double pr = 0.0;
+		for(int i = 0; i < graph.V(); i++) {
 			if(graph.indegree(i) == 0) {
-				//System.out.println("i am here superman");
-				map.put(i, 0.0);
+				prlist[i] = 0.0;
 			} else {
-				map.put(i, initialPr);
+				prlist[i] = 1/(double)graph.V();
 			}
 		}
-		double[] tempArray = new double[graph.V()];
+		double[] l = new double[graph.V()];
 		for( int j = 0;j < 1000; j++) {
-			for( int i = 0; i < vertices; i++) {
-				//System.out.println("---------------------------------");
-				sum = 0.0000;
-				for(int each : revGraph.adj(i)) {
-					double value = map.get(each);
-					sum += ((double)value/(double)graph.outdegree(each));
+			for( int i = 0; i < graph.V(); i++) {
+				pr = 0.0000;
+				for(int each : reversegraph.adj(i)) {
+					double value = prlist[each];
+					pr += ((double)value/(double)graph.outdegree(each));
 				}
-				tempArray[i] = sum;
+				l[i] = pr;
 			}
-			for(int i = 0; i < vertices; i++) {
-				map.put(i, tempArray[i]);
+			for(int i = 0; i < graph.V(); i++) {
+				prlist[i] = l[i];
 			}
 		}
 	}
 	public void print() {
-		for( int i = 0; i<map.size(); i++) {
-			System.out.println(i + " - " + map.get(i));
+		for( int i = 0; i<prlist.length; i++) {
+			System.out.println(i + " - " + prlist[i]);
 		}
 	}
 }
@@ -58,31 +51,28 @@ class WebSearch {
 public class Solution {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int totalVertices = Integer.parseInt(sc.nextLine());
-		//sc.nextLine();
-		Digraph d = new Digraph(totalVertices);
+		int v = Integer.parseInt(sc.nextLine());
+		Digraph g = new Digraph(v);
 		int i = 0;
-		while (i < totalVertices) {
-			String[] arra1 = sc.nextLine().split(" ");
-			for (int j = 1; j < arra1.length; j++) {
-				d.addEdge(Integer.parseInt(arra1[0]), Integer.parseInt(arra1[j]));
+		while (i < v) {
+			String[] tokens = sc.nextLine().split(" ");
+			for (int j = 1; j < tokens.length; j++) {
+				g.addEdge(Integer.parseInt(tokens[0]), Integer.parseInt(tokens[j]));
 			}
 			i++;
 		}
-		System.out.println(d.toString());
-		for (int k = 0; k < d.V(); k++) {
-			//System.out.println(d.adj(k));
-			if (d.outdegree(k) == 0) {
-				//System.out.println("i am here");
-				for (int a = 0; a < d.V(); a++ ) {
+		System.out.println(g.toString());
+		for (int k = 0; k < g.V(); k++) {
+			if (g.outdegree(k) == 0) {
+				for (int a = 0; a < g.V(); a++ ) {
 					if (k != a) {
-						d.addEdge(k, a);
+						g.addEdge(k, a);
 					}
 				}
 			}
 		}
-		PageRank pr = new PageRank(d);
-		pr.calculatePr();
+		PageRank pr = new PageRank(g);
+		pr.prcalculation();
 		pr.print();
 		//System.out.println(d.toString());
 		//System.out.println(d.reverse());

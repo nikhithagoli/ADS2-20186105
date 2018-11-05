@@ -10,6 +10,6 @@ class Solution {
 
 		}*/
 		KruskalMST mst = new KruskalMST(graph);
-		System.out.println(mst.weight());
+		System.out.println(String.format("%.5f",mst.weight()));
 	}
 }

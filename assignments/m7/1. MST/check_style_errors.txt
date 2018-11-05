@@ -408,8 +408,9 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m7\1. MST\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m7\1. MST\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m7\1. MST\Solution.java:3:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m7\1. MST\Solution.java:13:57: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 6 errors.
+Checkstyle ends with 7 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m7\1. MST\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m7\1. MST\Stack.java:14: Line has trailing spaces. [RegexpSingleline]

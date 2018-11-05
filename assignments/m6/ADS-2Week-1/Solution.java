@@ -4,8 +4,12 @@ class PageRank {
 	private Double[] prlist;
 	PageRank(Digraph g) {
 		prlist = new Double[g.V()];
-		for (int i = 0; i < g.V(); i++) {
+		for (int i = 0; i < g.reverse().V(); i++) {
+			if(g.indegree(i) == 0) {
+				prlist[i] = 0.0;
+			} else {
 				prlist[i] = 1.0 / (g.V());
+			}
 		}
 		for (int k = 0; k < 1000; k++) {
 			Double[] x = prcalculation(prlist, g);

@@ -310,10 +310,11 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:75:67: ';' is preceded with whitespace. [NoWhitespaceBefore]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:76: Line is longer than 80 characters (found 112). [LineLength]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:80: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:83: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:97: Line is longer than 80 characters (found 93). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:85:67: ')' is preceded with whitespace. [ParenPad]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:92: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Solution.java:102: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 30 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

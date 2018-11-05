@@ -78,13 +78,18 @@ class PageRank {
 			}
 			System.out.println(graph);
 			// Create page rank object and pass the graph object to the constructor
-			for (int i = 0; i < graph.V(); i++) {
-				if (graph.outdegree(i) == 0) {
-					for (int k = 0; k < graph.V() && (i != k); k++) {
-						graph.addEdge(i, k);
+			for (int k = 0; k < graph.V(); k++) {
+			//System.out.println(d.adj(k));
+			if (graph.outdegree(k) == 0) {
+				//System.out.println("i am here");
+				for (int a = 0; a < graph.V(); a++ ) {
+					if (k != a) {
+						graph.addEdge(k, a);
 					}
 				}
 			}
+		}
+			
 			PageRank pr = new PageRank(graph);
 			// print the page rank object
 			System.out.println(pr);

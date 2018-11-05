@@ -1,8 +1,4 @@
 import java.util.Scanner;
-import java.util.HashMap;
-import java.util.ArrayList;
-
-
 class PageRank {
 	Double[] prlist;
 	Digraph graph;
@@ -27,8 +23,7 @@ class PageRank {
 			for( int i = 0; i < graph.V(); i++) {
 				pr = 0.0000;
 				for(int each : reversegraph.adj(i)) {
-					double value = prlist[each];
-					pr += ((double)value/(double)graph.outdegree(each));
+					pr += ((double)prlist[each]/(double)graph.outdegree(each));
 				}
 				l[i] = pr;
 			}

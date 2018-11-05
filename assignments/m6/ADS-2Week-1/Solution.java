@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 class PageRank {
 	private Double[] prlist;
+	Digraph rev;
 	PageRank(Digraph g) {
 		prlist = new Double[g.V()];
 		for (int i = 0; i < g.V(); i++) {
@@ -11,6 +12,7 @@ class PageRank {
 				prlist[i] = 1.0 / (g.V());
 			}
 		}
+		rev = g.reverse();
 		/*for (int k = 0; k < 1000; k++) {
 			Double[] x = prcalculation(prlist, g);
 			if(Arrays.toString(prlist).equals(Arrays.toString(x))) {
@@ -20,7 +22,27 @@ class PageRank {
 			}
 
 		}*/
-		prcalculation(prlist, g.reverse());
+		// prcalculation(prlist, g.reverse());
+		Double[] l = new Double[rev.V()];
+		for (int k = 0; k < 1000; k++) {
+			for (int i = 0; i < rev.V(); i++) {
+				Double pr = 0.0000;
+				/*for(int j = 0; j < g.V(); j++) {
+					for(int each: g.adj(j)) {
+						if(each == i) {
+							pr += (double)(list[j] / g.outdegree(j));
+						}
+					}
+				}*/
+				for (int each : rev.adj(i)) {
+					pr += (double)(prlist[each] / (double) rev.outdegree(each));
+				}
+				l[i] = pr;
+			}
+			for (int i = 0; i < rev.V(); i++) {
+				prlist[i] = l[i];
+			}
+		}
 	}
 	public void prcalculation(Double[] list, Digraph g) {
 		Double[] l = new Double[g.V()];
@@ -40,7 +62,7 @@ class PageRank {
 				l[i] = pr;
 			}
 			for (int i = 0; i < g.V(); i++) {
-				prlist[i] = l[i];
+				list[i] = l[i];
 			}
 		}
 	}
@@ -82,9 +104,9 @@ class PageRank {
 			//System.out.println(d.adj(k));
 			if (graph.outdegree(k) == 0) {
 				//System.out.println("i am here");
-				for (int a = 0; a < graph.V(); a++ ) {
-					if (k != a) {
-						graph.addEdge(k, a);
+				for (int i = 0; i < graph.V(); i++ ) {
+					if (k != i) {
+						graph.addEdge(k, i);
 					}
 				}
 			}

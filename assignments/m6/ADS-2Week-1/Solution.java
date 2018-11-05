@@ -11,6 +11,7 @@ class PageRank {
 		graph=g;
 		prlist = new Double[g.V()];
 		reversegraph = graph.reverse();
+		prcalculation();
 	}
 	public void prcalculation() {
 		Double pr = 0.0;
@@ -72,7 +73,6 @@ public class Solution {
 			}
 		}
 		PageRank pr = new PageRank(g);
-		pr.prcalculation();
 		pr.print();
 		//System.out.println(d.toString());
 		//System.out.println(d.reverse());

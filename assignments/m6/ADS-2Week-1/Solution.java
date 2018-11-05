@@ -80,7 +80,7 @@ class PageRank {
 			// Create page rank object and pass the graph object to the constructor
 			for (int i = 0; i < graph.V(); i++) {
 				if (graph.outdegree(i) == 0) {
-					for (int k = 0; k < graph.V(); k++) {
+					for (int k = 0; k < graph.V() && (i != k); k++) {
 						graph.addEdge(i, k);
 					}
 				}

@@ -1,32 +1,3 @@
-/******************************************************************************
- *  Compilation:  javac Bag.java
- *  Execution:    java Bag < input.txt
- *  Dependencies: StdIn.java StdOut.java
- *
- *  A generic bag or multiset, implemented using a singly-linked list.
- *
- *  % more tobe.txt 
- *  to be or not to - be - - that - - - is
- *
- *  % java Bag < tobe.txt
- *  size of bag = 14
- *  is
- *  -
- *  -
- *  -
- *  that
- *  -
- *  -
- *  be
- *  -
- *  to
- *  not
- *  or
- *  be
- *  to
- *
- ******************************************************************************/
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
@@ -128,23 +99,4 @@ public class Bag<Item> implements Iterable<Item> {
             return item;
         }
     }
-
-    /**
-     * Unit tests the {@code Bag} data type.
-     *
-     * @param args the command-line arguments
-     */
-/*    public static void main(String[] args) {
-        Bag<String> bag = new Bag<String>();
-        while (!StdIn.isEmpty()) {
-            String item = StdIn.readString();
-            bag.add(item);
-        }
-
-        StdOut.println("size of bag = " + bag.size());
-        for (String s : bag) {
-            StdOut.println(s);
-        }
-    }*/
-
 }

@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:30: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:33: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.

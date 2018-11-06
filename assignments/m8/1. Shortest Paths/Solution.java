@@ -27,10 +27,10 @@ final class Solution {
         }
         /* it creates an empty undirected graph in O(v) time
          * where v is no of vertices.
-         * 
+         *
          * and it takes O(E) time to add all the edges in the graph
          * where E is no of edges.
-         * 
+         *
          * so in total O(V + E)
          */
         EdgeWeightedGraph graph = new EdgeWeightedGraph(n);

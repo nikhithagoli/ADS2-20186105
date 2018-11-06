@@ -1,11 +1,5 @@
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:25:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:29:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:36:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:38: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 5 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.

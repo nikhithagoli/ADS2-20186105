@@ -1,18 +1,11 @@
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:11:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:15:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:17: Line is longer than 80 characters (found 125). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:20:20: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:22: Line is longer than 80 characters (found 105). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:23: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:25:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:29:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:36:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m8\1. Shortest Paths\Solution.java:38: Line is longer than 80 characters (found 93). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 5 errors.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.
 Files to process must be specified, found 0.

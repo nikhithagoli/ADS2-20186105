@@ -5,8 +5,8 @@ public class SAP {
     // constructor takes a digraph (not necessarily a DAG)
     public SAP(Digraph G) {
         this.dg = G;
-        bfs = new BreadthFirstDirectedPaths[this.dg.vertices()];
-        for(int i = 0; i < dg.vertices(); i++) {
+        bfs = new BreadthFirstDirectedPaths[this.dg.V()];
+        for(int i = 0; i < dg.V(); i++) {
             bfs[i] = new BreadthFirstDirectedPaths(dg, i);
         }
     }
@@ -14,7 +14,7 @@ public class SAP {
     // length of shortest ancestral path between v and w; -1 if no such path
     public int length(final int v, final int w) {
         int length = Integer.MAX_VALUE;
-        for (int i = 0; i < dg.vertices(); i++) {
+        for (int i = 0; i < dg.V(); i++) {
             if (bfs[v].hasPathTo(i) && bfs[w].hasPathTo(i)) {
                 int len = bfs[v].distTo(i) + bfs[w].distTo(i);
                 if (len <length) {
@@ -33,7 +33,7 @@ public class SAP {
     public int ancestor(int v, int w) {
         int length = Integer.MAX_VALUE;
         int ancestor = -1;
-        for (int i = 0; i < dg.vertices(); i++) {
+        for (int i = 0; i < dg.V(); i++) {
             if (bfs[v].hasPathTo(i) && bfs[w].hasPathTo(i)) {
                 int len = bfs[v].distTo(i) + bfs[w].distTo(i);
                 if (len < length) {

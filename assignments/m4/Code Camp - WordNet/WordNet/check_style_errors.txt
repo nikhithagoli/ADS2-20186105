@@ -290,6 +290,8 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:117:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:120: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:133: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:139:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:148:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:154:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:154:33: Parameter v should be final. [FinalParameters]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:155: 'if' construct must use '{}'s. [NeedBraces]
@@ -308,7 +310,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:230: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\Digraph.java:230: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 66 errors.
+Checkstyle ends with 68 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -1,4 +1,4 @@
-########## Testcase 0: Passed ##########
+########## Testcase 0: Failed ##########
 Expected Output: 
 15 vertices, 14 edges 
 0: 
@@ -18,22 +18,10 @@ Expected Output:
 14: 13
 
 Your Output: 
-15 vertices, 14 edges 
-0: 
-1: 0 
-2: 0 
-3: 1 
-4: 1 
-5: 1 
-6: 10 
-7: 3 
-8: 3 
-9: 5 
-10: 5 
-11: 10 
-12: 10 
-13: 6 
-14: 13
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -42,10 +30,10 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -58,10 +46,10 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -71,10 +59,10 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -86,10 +74,10 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -106,10 +94,10 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -123,10 +111,10 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -143,13 +131,13 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 8: Passed ##########
+########## Testcase 8: Failed ##########
 Expected Output: 
 8 vertices, 17 edges 
 0: 7 6 5 4 3 1 
@@ -162,31 +150,32 @@ Expected Output:
 7:
 
 Your Output: 
-8 vertices, 17 edges 
-0: 7 6 5 4 3 1 
-1: 7 
-2: 7 6 5 4 3 1 
-3: 7 
-4: 7 
-5: 7 
-6: 7 
-7:
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 9: Passed ##########
+########## Testcase 9: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Multiple roots
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 10: Passed ##########
+########## Testcase 10: Failed ##########
 Expected Output: 
 Multiple roots
 
 Your Output: 
-Multiple roots
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -194,10 +183,10 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -205,10 +194,10 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -232,17 +221,20 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
-	at SAP.<init>(SAP.java:8)
-	at WordNet.sap(WordNet.java:158)
-	at Solution.main(Solution.java:50)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 
-########## Testcase 14: Passed ##########
+########## Testcase 14: Failed ##########
 Expected Output: 
 Cycle detected
 
 Your Output: 
-Cycle detected
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.V()I
+	at DirectedCycle.<init>(DirectedCycle.java:29)
+	at WordNet.<init>(WordNet.java:98)
+	at Solution.main(Solution.java:31)
 ----------------------------------------
 

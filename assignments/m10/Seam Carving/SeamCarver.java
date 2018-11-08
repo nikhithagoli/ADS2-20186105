@@ -29,6 +29,9 @@ public class SeamCarver {
 		double dy = 0.0;
 		Color front;
 		Color back;
+		if (x < 0 || x >= width || y < 0 || y >= height) {
+			throw new IllegalArgumentException("Picture is null");
+		}
 		if(x == 0 || y == 0 || x == width -1 || y == height -1) {
 			return 1000.0;
 		} else {

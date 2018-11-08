@@ -5,6 +5,9 @@ public class SeamCarver {
 	private int width;
 	private int height;
 	public SeamCarver(Picture pic) {
+		if (pic == null) {
+			throw new IllegalArgumentException("Picture is null");
+		}
 		this.picture = pic;
 		width = pic.width();
 		height = pic.height();

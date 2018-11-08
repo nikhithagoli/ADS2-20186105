@@ -698,4 +698,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 129 errors.
 Starting audit...
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 1 errors.

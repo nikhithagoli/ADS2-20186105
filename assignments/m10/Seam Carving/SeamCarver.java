@@ -4,7 +4,7 @@ public class SeamCarver {
 	private Picture picture;
 	private int width;
 	private int height;
-	public SeamCarver(Picture pic) throws IllegalArgumentException {
+	public SeamCarver(Picture pic) {
 		if (pic == null) {
 			throw new IllegalArgumentException("picture is null");
 		}

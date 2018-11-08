@@ -6,7 +6,7 @@ public class SeamCarver {
 	private int height;
 	public SeamCarver(Picture pic) {
 		if (pic == null) {
-			throw new IllegalArgumentException("Picture is null");
+			throw new IllegalArgumentException("picture is null");
 		}
 		this.picture = pic;
 		width = pic.width();
@@ -33,7 +33,7 @@ public class SeamCarver {
 		Color front;
 		Color back;
 		if (x < 0 || x >= width || y < 0 || y >= height) {
-			throw new IllegalArgumentException("Picture is null");
+			throw new IllegalArgumentException("picture is null");
 		}
 		if(x == 0 || y == 0 || x == width -1 || y == height -1) {
 			return 1000.0;

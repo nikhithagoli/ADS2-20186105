@@ -655,6 +655,8 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:88: Line is longer than 80 characters (found 122). [LineLength]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:88:95: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:88:96: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:90:62: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:90:63: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:91:66: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:91:67: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:93:20: 'for' is not followed by whitespace. [WhitespaceAfter]
@@ -663,7 +665,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:105:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:105:40: Parameter seam should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 55 errors.
+Checkstyle ends with 57 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\ShowEnergy.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\ShowEnergy.java:5: Line has trailing spaces. [RegexpSingleline]

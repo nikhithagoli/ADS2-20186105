@@ -1,31 +1,63 @@
+/**
+ * Files import.
+ */
+import java.io.File;
+/**
+ * Scanner import.
+ */
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 class Solution {
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		String synsetsfile = sc.nextLine();
-		String hypernymsfile = sc.nextLine();
-		String mode =sc.nextLine();
-		WordNet wordnet = new WordNet(synsetsfile, hypernymsfile);;
-		try {
-			if (mode.equals("Graph")) {
-				wordnet.print();
-			}
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-		}
-		try {
-			if (mode.equals("Queries")) {
-				// wordnet = new WordNet(synsetsfile, hypernymsfile);
-				while (sc.hasNextLine()) {
-					String[] input = sc.nextLine().split(" ");
-					if(input[0].equals("null")) {
-						throw new IllegalArgumentException("IllegalArgumentException");
-					}
-					System.out.println("distance = " + wordnet.distance(input[0], input[1]) + ", ancestor = " + wordnet.sap(input[0], input[1]));
-				}
-			}
-		} catch (Exception e) {
-		                System.out.println(e.getMessage());
-	    }
-	}
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //Empty Constructor.
+    }
+    /**
+     * Main function.
+     *
+     * @param      args       The arguments
+     *
+     * @throws     Exception  { exception_description }
+     */
+    public static void main(String[] args) throws Exception{
+        Scanner sc = new Scanner(System.in);
+        String synsets = sc.nextLine();
+        String hypernyms = sc.nextLine();
+        try {
+            WordNet wrdnet = new WordNet(synsets, hypernyms);
+            String input = sc.nextLine();
+            if (wrdnet.gethasCycle()) {
+                System.out.println("Cycle detected");
+                return;
+            }
+
+            if (input.equals("Graph")) {
+                wrdnet.checkMultipleRoots();
+                if (wrdnet.gethasMultipleRoots()) {
+                    return;
+                } else {
+                    System.out.println(wrdnet.getDigraph());
+                }
+            } 
+            if (input.equals("Queries")) {
+                while (sc.hasNextLine()) {
+                    String[] tokens = sc.nextLine().split(" ");
+                    try {
+                        wrdnet.sap(tokens[0], tokens[1]);
+                        System.out.println("distance = "
+                            + wrdnet.distance(tokens[0], tokens[1])
+                            + ", ancestor = " + wrdnet.sap(tokens[0], tokens[1]));
+                    } catch (Exception e) {
+                        System.out.println("IllegalArgumentException");
+                    }
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
 }

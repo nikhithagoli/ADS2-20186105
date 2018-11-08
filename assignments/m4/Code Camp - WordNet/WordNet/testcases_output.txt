@@ -36,17 +36,19 @@ Your Output:
 14: 13
 ----------------------------------------
 
-########## Testcase 1: Passed ##########
+########## Testcase 1: Failed ##########
 Expected Output: 
 distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-distance = 7, ancestor = entity
-distance = 10, ancestor = entity
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 distance = 7, ancestor = macromolecule supermolecule
 distance = 7, ancestor = macromolecule supermolecule
@@ -56,27 +58,26 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-distance = 7, ancestor = macromolecule supermolecule
-distance = 7, ancestor = macromolecule supermolecule
-distance = 9, ancestor = macromolecule supermolecule
-distance = 8, ancestor = macromolecule supermolecule
-distance = 7, ancestor = lipid lipide lipoid
-distance = 1, ancestor = animal_oil
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 distance = 3, ancestor = wax
 distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-distance = 3, ancestor = wax
-distance = 13, ancestor = thing
-distance = 2, ancestor = wax
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 distance = 0, ancestor = b
 distance = 0, ancestor = c
@@ -85,14 +86,13 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-distance = 0, ancestor = b
-distance = 0, ancestor = c
-distance = 0, ancestor = d
-distance = 0, ancestor = e
-distance = 0, ancestor = f
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -106,19 +106,13 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-distance = 1, ancestor = b
-distance = 2, ancestor = c
-distance = 4, ancestor = c
-distance = 3, ancestor = c
-distance = 4, ancestor = c
-distance = 4, ancestor = c
-distance = 3, ancestor = c
-distance = 3, ancestor = i
-distance = 2, ancestor = j
-distance = 1, ancestor = k
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 2, ancestor = c
@@ -129,16 +123,13 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-distance = 1, ancestor = b
-distance = 2, ancestor = c
-distance = 2, ancestor = h
-distance = 5, ancestor = h
-distance = 4, ancestor = h
-distance = 3, ancestor = h
-distance = 1, ancestor = h
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 7: Passed ##########
+########## Testcase 7: Failed ##########
 Expected Output: 
 distance = 1, ancestor = b
 distance = 1, ancestor = c
@@ -152,16 +143,10 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-distance = 1, ancestor = b
-distance = 1, ancestor = c
-distance = 1, ancestor = d
-distance = 1, ancestor = e
-distance = 2, ancestor = f
-distance = 3, ancestor = f
-distance = 3, ancestor = f
-distance = 3, ancestor = f
-distance = 3, ancestor = f
-distance = 4, ancestor = f
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 8: Passed ##########
@@ -204,20 +189,26 @@ Your Output:
 Multiple roots
 ----------------------------------------
 
-########## Testcase 11: Passed ##########
+########## Testcase 11: Failed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-IllegalArgumentException
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
-########## Testcase 12: Passed ##########
+########## Testcase 12: Failed ##########
 Expected Output: 
 IllegalArgumentException
 
 Your Output: 
-IllegalArgumentException
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -241,11 +232,10 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
-	at BreadthFirstDirectedPaths.<init>(BreadthFirstDirectedPaths.java:16)
-	at SAP.<init>(SAP.java:10)
-	at WordNet.<init>(WordNet.java:40)
-	at Solution.main(Solution.java:8)
+Exception in thread "main" java.lang.NoSuchMethodError: Digraph.vertices()I
+	at SAP.<init>(SAP.java:8)
+	at WordNet.sap(WordNet.java:283)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 14: Passed ##########

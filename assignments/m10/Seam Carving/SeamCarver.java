@@ -77,10 +77,10 @@ public class SeamCarver {
 			for (int row = 0; row < height(); row++) {
 
 				// relax right-upper edge if it exists
-				if (row - 1 >= 0)
-					relaxEdge(width() * row + col, width() * (row - 1) + (col + 1), distTo, edgeTo);
 				// relax right-middle edge
 				relaxEdge(width() * row + col, width() * row + (col + 1), distTo, edgeTo);
+				if (row - 1 >= 0)
+					relaxEdge(width() * row + col, width() * (row - 1) + (col + 1), distTo, edgeTo);
 				// relax right-bottom edge if it exists
 				if (row + 1 <= height() - 1)
 					relaxEdge(width() * row + col, width() * (row + 1) + (col + 1), distTo, edgeTo);

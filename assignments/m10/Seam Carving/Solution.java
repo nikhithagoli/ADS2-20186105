@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Solution class.
  */
-final public class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -25,22 +25,28 @@ final public class Solution {
         StdOut.printf("Printing energy calculated for each pixel.\n");
 
         for (int row = 0; row < sc.height(); row++) {
-            for (int col = 0; col < sc.width(); col++)
+            for (int col = 0; col < sc.width(); col++) {
                 StdOut.printf("%9.0f ", sc.energy(col, row));
+            }
             StdOut.println();
         }
     }
-
+    /**
+     * printseam.
+     *
+     * @param      carver     The carver
+     * @param      seam       The seam
+     * @param      direction  The direction
+     */
     public static void printSeam(final SeamCarver carver,
                  final int[] seam, final boolean direction) {
         double totalSeamEnergy = 0.0;
-
         for (int row = 0; row < carver.height(); row++) {
             for (int col = 0; col < carver.width(); col++) {
                 double energy = carver.energy(col, row);
                 String marker = " ";
-                if ((direction == true && row == seam[col]) ||
-                        (direction == false   && col == seam[row])) {
+                if ((direction == true && row == seam[col])
+                        || (direction == false   && col == seam[row])) {
                     marker = "*";
                     totalSeamEnergy += energy;
                 }
@@ -53,7 +59,11 @@ final public class Solution {
         StdOut.println();
         StdOut.println();
     }
-
+    /**
+     * main.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         String cases = scan.nextLine();

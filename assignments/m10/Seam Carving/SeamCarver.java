@@ -79,11 +79,11 @@ public class SeamCarver {
 				// relax right-upper edge if it exists
 				// relax right-middle edge
 				relaxEdge(width() * row + col, width() * row + (col + 1), distTo, edgeTo);
-				if (row - 1 >= 0)
-					relaxEdge(width() * row + col, width() * (row - 1) + (col + 1), distTo, edgeTo);
 				// relax right-bottom edge if it exists
 				if (row + 1 <= height() - 1)
 					relaxEdge(width() * row + col, width() * (row + 1) + (col + 1), distTo, edgeTo);
+				if (row - 1 >= 0)
+					relaxEdge(width() * row + col, width() * (row - 1) + (col + 1), distTo, edgeTo);
 			}
 		}
 		double curMinDist = Double.POSITIVE_INFINITY;

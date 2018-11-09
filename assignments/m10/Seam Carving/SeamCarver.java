@@ -67,7 +67,7 @@ public class SeamCarver {
 		for (int col = 0; col < width(); col++) {
 			for (int row = 0; row < height(); row++) {
 				if (col == 0)
-					distTo[width() * row + col] = 1000;
+					distTo[width() * row + col] = 1000.0;
 				else
 					distTo[width() * row + col] = Double.POSITIVE_INFINITY;
 				edgeTo[width() * row + col] = -1;

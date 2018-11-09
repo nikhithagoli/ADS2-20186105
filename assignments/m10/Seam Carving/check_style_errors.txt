@@ -257,7 +257,7 @@ Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:64:9: Class 'SeamCarver' looks like designed for extension (can be subclassed), but the method 'findHorizontalSeam' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SeamCarver' final or making the method 'findHorizontalSeam' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:64:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:69: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:70:71: '1000' is a magic number. [MagicNumber]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:70:71: '1000.0' is a magic number. [MagicNumber]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:71: 'else' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:72: Line is longer than 80 characters (found 95). [LineLength]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:80: 'if' construct must use '{}'s. [NeedBraces]

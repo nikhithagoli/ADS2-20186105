@@ -23,8 +23,15 @@ public class Solution {
 		case "DirectedPaths":
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
+			String[] tokens = sc.nextLine().split(" ");
+			DijkstraUndirectedSP sp  = new DijkstraUndirectedSP(graph, Integer.parseInt(tokens[0]));
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			if(sp.hasPathTo(Integer.parseInt(tokens[1]))) {
+				System.out.println(sp.distTo(Integer.parseInt(tokens[1])));
+			} else {
+				System.out.println("No Path Found.");
+			}
 			break;
 
 		case "ViaPaths":

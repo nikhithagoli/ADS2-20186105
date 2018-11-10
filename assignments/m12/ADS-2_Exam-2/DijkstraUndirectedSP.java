@@ -98,7 +98,18 @@ public class DijkstraUndirectedSP {
         }
         return path;
     }
-
+    boolean hasviapath(int v, int w) {
+        Iterable<Edge> path = pathTo(v);
+        int x = v;
+        for (Edge e = edgeTo[v]; e != null; e = edgeTo[x]) {
+            if (e.either() == w) {
+                return true;
+            } else {
+                x = e.other(x);
+            }
+        }
+        return false;
+    }
 
     // check optimality conditions:
     // (i) for all edges e = v-w:            distTo[w] <= distTo[v] + e.weight()
@@ -155,6 +166,6 @@ public class DijkstraUndirectedSP {
     private void validateVertex(int v) {
         int V = distTo.length;
         if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V - 1));
     }
 }

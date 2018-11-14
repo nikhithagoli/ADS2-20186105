@@ -1,25 +1,7 @@
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:5:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:6:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:13: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:21:13: Name 'R' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:21:17: '256' is a magic number. [MagicNumber]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:24:23: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:24:24: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:28:36: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:28:37: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:29: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:33: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:34:24: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:34:25: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:37: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:41: 'for' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\LSD.java:14:5: Redundant 'public' modifier. [RedundantModifier]
 Audit done.
-Checkstyle ends with 16 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m13\Radix Sorts\Solution.java:21:20: 'for' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 3 errors.

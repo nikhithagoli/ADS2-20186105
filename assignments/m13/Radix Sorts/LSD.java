@@ -7,12 +7,6 @@ class Lsd {
      * bits.
      */
     private static final int BITS_PER_BYTE = 8;
-
-    /**
-     * Constructs the object.
-     */
-    Lsd() { }
-
     /**
       * Rearranges the array of W-character strings in ascending order.
       *

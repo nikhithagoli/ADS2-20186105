@@ -15,7 +15,7 @@ class Lsd {
     }
     /**
       * Rearranges the array of W-character strings in ascending order.
-      *
+      * it takes O(WN) time to sort.
       * @param a the array to be sorted
       * @param w the number of characters per string
       */

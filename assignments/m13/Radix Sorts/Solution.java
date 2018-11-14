@@ -22,6 +22,7 @@ final class Solution {
             strings[i] = sc.nextLine();
         }
         Lsd lsd = new Lsd();
+        // it take O(WN) time to sort.
         lsd.sort(strings, strings[0].length());
     }
 }

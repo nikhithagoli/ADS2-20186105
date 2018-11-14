@@ -21,7 +21,7 @@ final class Solution {
         for (int i = 0; i < n; i++) {
             strings[i] = sc.nextLine();
         }
-        LSD lsd = new LSD();
+        Lsd lsd = new Lsd();
         lsd.sort(strings, strings[0].length());
     }
 }

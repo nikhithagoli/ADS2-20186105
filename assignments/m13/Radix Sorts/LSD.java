@@ -2,7 +2,7 @@ import java.util.Arrays;
 /**
  * Class for lsd.
  */
-class LSD {
+class Lsd {
     /**
      * bits.
      */
@@ -11,7 +11,7 @@ class LSD {
     /**
      * Constructs the object.
      */
-    public LSD() { }
+    Lsd() { }
 
     /**
       * Rearranges the array of W-character strings in ascending order.

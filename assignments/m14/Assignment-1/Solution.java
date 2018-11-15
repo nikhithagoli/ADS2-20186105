@@ -3,21 +3,21 @@ import java.util.Scanner;
  * class for Solution.
  */
 final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//unused.
-	}
-	/**
-	 * main.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		String[] words = loadWords();
-		//Your code goes here...
-		 TST tst = new TST();
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //unused.
+    }
+    /**
+     * main.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        String[] words = loadWords();
+        //Your code goes here...
+         TST tst = new TST();
         for (int i = 0; i < words.length; i++) {
             int n = words[i].length();
             // string array of all the suffixes of the given word.
@@ -36,15 +36,15 @@ final class Solution {
         for (String s : st) {
             System.out.println(s.toString());
         }
-	}
-	/**
-	 * Loads words.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public static String[] loadWords() {
-		In in = new In("/Files/dictionary-algs4.txt");
-		String[] words = in.readAllStrings();
-		return words;
-	}
+    }
+    /**
+     * Loads words.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public static String[] loadWords() {
+        In in = new In("/Files/dictionary-algs4.txt");
+        String[] words = in.readAllStrings();
+        return words;
+    }
 }

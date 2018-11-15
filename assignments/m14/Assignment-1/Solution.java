@@ -37,7 +37,11 @@ final class Solution {
             System.out.println(s.toString());
         }
 	}
-
+	/**
+	 * Loads words.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public static String[] loadWords() {
 		In in = new In("/Files/dictionary-algs4.txt");
 		String[] words = in.readAllStrings();

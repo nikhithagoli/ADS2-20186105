@@ -15,7 +15,7 @@ public class SeamCarver {
     /**
      * Constructs the object.
      *
-     * @param      picture  The picture
+     * @param      p  The picture
      */
     public SeamCarver(final Picture p) {
         if (p == null) {
@@ -64,7 +64,8 @@ public class SeamCarver {
     public  double energy(final int x, final int y) {
         // int w = width() - 1, h = height() - 1;
         if (x < 0 || x > width() - 1 || y < 0 || y > height() - 1) {
-            throw new java.lang.IllegalArgumentException("IllegalArgumentException");
+            throw new java.lang.
+            IllegalArgumentException("IllegalArgumentException");
         }
         if (x == 0 || x == width() - 1 ||  y == 0 || y == height() - 1) {
             return BORDER;
@@ -73,7 +74,7 @@ public class SeamCarver {
     }
 
     /**
-     * // energy of pixel at column x and row y not on boarder
+     * // energy of pixel at column x and row y not on boarder.
      *
      * @param      x  integer
      * @param      y  integer
@@ -90,8 +91,8 @@ public class SeamCarver {
     /**
      * gradient method.
      *
-     * @param      one   One
-     * @param      two   Two
+     * @param      first   One
+     * @param      second   Two
      *
      * @return  gradient horizontal and vertical.
      */
@@ -264,7 +265,15 @@ public class SeamCarver {
         this.picture = pic;
     }
 
-    // return false if two consecutive entries differ by more than 1
+    /**
+     * // return false if two consecutive entries differ by more than 1.
+     *
+     * @param      a      { parameter_description }
+     * @param      len    The length
+     * @param      range  The range
+     *
+     * @return     True if valid, False otherwise.
+     */
     private boolean isValid(final int[] a, final int len, final int range) {
         if (a == null) {
             return false;
@@ -273,9 +282,10 @@ public class SeamCarver {
             return false;
         }
         for (int i = 1; i < len; i++) {
-            if (a[i] < Math.max(0, a[i - 1] - 1) ||
-                a[i] > Math.min(range, a[i - 1] + 1))
-                return false;
+            if (a[i] < Math.max(0, a[i - 1] - 1)
+                || a[i] > Math.min(range, a[i - 1] + 1)) {
+            	return false;
+            }
         }
         return true;
     }

@@ -1,18 +1,8 @@
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:18:8: Unused @param tag for 'picture'. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:20:37: Expected @param tag for 'p'. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:67: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:75: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:93:8: Unused @param tag for 'one'. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:94:8: Unused @param tag for 'two'. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:98:41: Expected @param tag for 'first'. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:98:60: Expected @param tag for 'second'. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:268:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:276: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:276:50: '||' should be on a new line. [OperatorWrap]
+[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:287:13: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Files to process must be specified, found 0.

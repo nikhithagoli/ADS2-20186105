@@ -1,8 +1,5 @@
 Starting audit...
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m10\Seam Carving\SeamCarver.java:287:13: File contains tab characters (this is the first instance). [FileTabCharacter]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Files to process must be specified, found 0.

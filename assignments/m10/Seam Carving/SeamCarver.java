@@ -192,7 +192,7 @@ public class SeamCarver {
                 path[row] = col - 1;
             }
             if (col < (w - 2) && energies[row][col + 1]
-                < energies[row][path[row]]) {
+                    < energies[row][path[row]]) {
                 path[row] = col + 1;
             }
         }
@@ -207,11 +207,11 @@ public class SeamCarver {
         double[][] transposeEnergies = transposeGrid(initEnergies());
         return minVerticalPath(transposeEnergies);
     }
-   /**
-    *  // sequence of indices for vertical seam.
-    *
-    * @return   // sequence of indices for vertical seam.
-    */
+    /**
+     *  // sequence of indices for vertical seam.
+     *
+     * @return   // sequence of indices for vertical seam.
+     */
     public int[] findVerticalSeam() {
         double[][] normalEnergies = initEnergies();
         return minVerticalPath(normalEnergies);
@@ -283,8 +283,8 @@ public class SeamCarver {
         }
         for (int i = 1; i < len; i++) {
             if (a[i] < Math.max(0, a[i - 1] - 1)
-                || a[i] > Math.min(range, a[i - 1] + 1)) {
-            	return false;
+                    || a[i] > Math.min(range, a[i - 1] + 1)) {
+                return false;
             }
         }
         return true;

@@ -235,7 +235,7 @@ class T9 {
             sortedfrequencies.insert((Integer) tst.get(each));
         }
         TreeSet<String> suggestions = new TreeSet<String>();
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < k && sortedfrequencies.size() > i; i++) {
             int value = sortedfrequencies.delMax();
             for (String word : words) {
                 if (value == (Integer) tst.get(word)) {

@@ -24,7 +24,7 @@ final class Solution {
         switch (cases) {
         case "loadDictionary":
             // input000.txt and output000.txt
-            BinarySearchST<String, Integer> hash = 
+            BinarySearchST<String, Integer> hash =
                     loadDictionary("/Files/t9.csv");
             while (scan.hasNextLine()) {
                 String key = scan.nextLine();
@@ -113,7 +113,7 @@ final class Solution {
      */
     public static BinarySearchST<String, Integer> loadDictionary(
                     final String file) {
-        BinarySearchST<String, Integer>  st = new 
+        BinarySearchST<String, Integer>  st = new
                     BinarySearchST<String, Integer>();
         // your code goes here
         String[] messages = toReadFile(file);
@@ -144,7 +144,7 @@ class T9 {
      *
      * @param      st    { parameter_description }
      */
-    public T9(final BinarySearchST<String, Integer> st) {
+    protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         tst = new TST();
         for (String each : st.keys()) {
@@ -173,7 +173,7 @@ class T9 {
      */
     public static ArrayList<String> letterCombinations(final
                              String digits) {
-        HashMap<Character, String> matches = new 
+        HashMap<Character, String> matches = new
                         HashMap<Character, String>();
         matches.put('2', "abc");
         matches.put('3', "def");
@@ -190,8 +190,9 @@ class T9 {
         for (int i = 0; i < digits.length(); i++) {
             for (String str : res) {
                 String letters = matches.get(digits.charAt(i));
-                for (int j = 0; j < letters.length(); j++)
+                for (int j = 0; j < letters.length(); j++) {
                     preres.add(str + letters.charAt(j));
+                }
             }
             res = preres;
             preres = new ArrayList<String>();
@@ -231,13 +232,13 @@ class T9 {
         // your code goes here
         MaxPQ<Integer> sortedfrequencies = new MaxPQ<Integer>();
         for (String each : words) {
-            sortedfrequencies.insert((Integer)tst.get(each));
+            sortedfrequencies.insert((Integer) tst.get(each));
         }
         TreeSet<String> suggestions = new TreeSet<String>();
         for (int i = 0; i < k; i++) {
             int value = sortedfrequencies.delMax();
             for (String word : words) {
-                if (value == (Integer)tst.get(word)) {
+                if (value == (Integer) tst.get(word)) {
                     suggestions.add(word);
                 }
             }

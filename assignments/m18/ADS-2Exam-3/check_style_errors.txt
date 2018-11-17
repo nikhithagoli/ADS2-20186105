@@ -376,15 +376,8 @@ Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:27: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:116: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:147:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:176: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:193: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:234:47: 'typecast' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\Solution.java:240:39: 'typecast' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\TST.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\basic\ADS2-20186105\ADS2-20186105\assignments\m18\ADS-2Exam-3\TST.java:46: Line is longer than 80 characters (found 84). [LineLength]

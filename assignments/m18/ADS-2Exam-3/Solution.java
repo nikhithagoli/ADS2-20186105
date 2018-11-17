@@ -236,7 +236,7 @@ class T9 {
         }
         TreeSet<String> suggestions = new TreeSet<String>();
         for (int i = 0; i < k; i++) {
-            if (sortedfrequencies.size() < i) {
+            if (sortedfrequencies.size() == 0) {
                 break;
             }
             int value = sortedfrequencies.delMax();

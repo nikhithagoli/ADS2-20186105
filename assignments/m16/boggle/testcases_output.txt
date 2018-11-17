@@ -235,6 +235,6 @@ Expected Output:
 board is null
 
 Your Output: 
--20
+Board is null
 ----------------------------------------
 

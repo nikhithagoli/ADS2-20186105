@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.util.TreeSet;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 
 public class Solution {
@@ -120,10 +122,40 @@ class T9 {
 		// your code goes here
 		return tst.keysWithPrefix(prefix);
 	}
+	 public static ArrayList<String> letterCombinations(String digits) {
+	 	HashMap<Character, String> matches = new HashMap<Character, String>();
+		matches.put('2', "abc");
+		matches.put('3', "def");
+		matches.put('4', "ghi");
+		matches.put('5', "jkl");
+		matches.put('6', "mno");
+		matches.put('7', "pqrs");
+		matches.put('8', "tuv");
+		matches.put('9', "wxyz");
+        ArrayList<String> res = new ArrayList<String>();
+        ArrayList<String> preres = new ArrayList<String>();
+        res.add("");
 
+        for (int i = 0; i < digits.length(); i++) {
+            for (String str : res) {
+                String letters = matches.get(digits.charAt(i));
+                for (int j = 0; j < letters.length(); j++)
+                    preres.add(str + letters.charAt(j));
+            }
+            res = preres;
+            preres = new ArrayList<String>();
+        }
+        return res;
+    }
 	public Iterable<String> potentialWords(String t9Signature) {
 		// your code goes here
-		return null;
+		Queue<String> possibilities = new Queue<>();
+		for(String each: letterCombinations(t9Signature)) {
+			if(tst.contains(each)) {
+				possibilities.enqueue(each);
+			}
+		}
+		return possibilities;
 	}
 
 	// return all possibilities(words), find top k with highest frequency.

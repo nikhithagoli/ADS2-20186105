@@ -130,36 +130,20 @@ class T9 {
 
 	public Iterable<String> getSuggestions(Iterable<String> words, int k) {
 		// your code goes here
-		
 		MaxPQ<Integer> sortedfrequencies = new MaxPQ<Integer>();
-		for(String each: words) {
-			sortedfrequencies.insert((Integer)tst.get(each));
-		}
-		Queue<String> suggestions = new Queue<String>();
-		for(int i = 0; i < k; i++) {
-			int max = sortedfrequencies.delMax();
-			for(String each : words) {
-				if((Integer)tst.get(each) == max) {
-					suggestions.enqueue(each);
-				}
-			}
-		}
-		// System.out.println(suggestions); 
-		return suggestions;
-		/*MaxPQ<Integer> sortedfrequencies = new MaxPQ<Integer>();
 		for (String each : words) {
 			sortedfrequencies.insert((Integer)tst.get(each));
 		}
-		TreeSet<String> sortedlist = new TreeSet<String>();
+		TreeSet<String> suggestions = new TreeSet<String>();
 		for (int i = 0; i < k; i++) {
 			int value = sortedfrequencies.delMax();
 			for (String word : words) {
 				if (value == (Integer)tst.get(word)) {
-					sortedlist.add(word);
+					suggestions.add(word);
 				}
 			}
 		}
-		return sortedlist;*/
+		return suggestions;
 	}
 
 	// final output

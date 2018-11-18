@@ -15,13 +15,12 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         //Scanner scan = new Scanner(System.in);
-        String synFile = StdIn.readLine();
-        String hyperFile = StdIn.readLine();
-        //WordNet wn = new WordNet(synFile, hyperFile);
+        String synsetfile = StdIn.readLine();
+        String hypersetfile = StdIn.readLine();
         String token = StdIn.readLine();
         try {
             if (token.equals("Graph")) {
-                WordNet wn = new WordNet(synFile, hyperFile);
+                WordNet wn = new WordNet(synsetfile, hypersetfile);
                 wn.display();
             }
         } catch (Exception e) {
@@ -29,18 +28,18 @@ public final class Solution {
         }
         try {
             if (token.equals("Queries")) {
-                WordNet wnq = new WordNet(synFile, hyperFile);
+                WordNet wn = new WordNet(synsetfile, hypersetfile);
                 while (StdIn.hasNextLine()) {
-                    String[] array = StdIn.readLine().
-                    split(" ");
-                    if (array[0].equals("null")) {
+                    String[] tokens = StdIn.readLine().
+                                    split(" ");
+                    if (tokens[0].equals("null")) {
                     throw new IllegalArgumentException(
-                    "IllegalArgumentException");
+                            "IllegalArgumentException");
                     }
                     System.out.println("distance = "
-                    + wnq.distance(array[0], array[1])
-                    + ", ancestor = " + wnq.sap(array[0],
-                    array[1]));
+                        + wn.distance(tokens[0], tokens[1])
+                        + ", ancestor = " + wn.sap(tokens[0],
+                    tokens[1]));
                 }
             }
         } catch (Exception e) {

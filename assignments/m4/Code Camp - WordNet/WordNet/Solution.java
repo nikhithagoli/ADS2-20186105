@@ -14,7 +14,6 @@ public final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        //Scanner scan = new Scanner(System.in);
         String synsetfile = StdIn.readLine();
         String hypersetfile = StdIn.readLine();
         String token = StdIn.readLine();

@@ -112,7 +112,6 @@ public class SAP {
                 }
             }
         }
-        //assert length != -1;
         return ancestor;
     }
 

@@ -76,13 +76,13 @@ public class BoggleSolver {
      * @param      words    The words
      */
     private void searchWord(final BoggleBoard board, final int i,
-        final int j, final String str, final boolean[][] visited,
+        final int j, final String s, final boolean[][] visited,
                             final HashSet words) {
         if (visited[i][j]) {
             return;
         }
         char letter = board.getLetter(i, j);
-        String word = str;
+        String word = s;
         if (letter == 'Q') {
             word += "QU";
         } else {

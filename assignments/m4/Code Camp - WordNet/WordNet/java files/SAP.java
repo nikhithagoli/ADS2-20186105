@@ -1,40 +1,38 @@
 public class SAP {
-    private Digraph dg;
+    private Digraph graph;
     private BreadthFirstDirectedPaths[] bfs;
 
     // constructor takes a digraph (not necessarily a DAG)
-    public SAP(Digraph G) {
-        this.dg = new Digraph(G);
-        bfs = new BreadthFirstDirectedPaths[this.dg.V()];
+    public SAP(Digraph g) {
+        this.graph = new Digraph(g);
+        bfs = new BreadthFirstDirectedPaths[this.graph.V()];
     }
 
     // length of shortest ancestral path between v and w; -1 if no such path
     public int length(final int v, final int w) {
-        if (v < 0 || v > dg.V() - 1) {
+        if (v < 0 || v > graph.V() - 1) {
             throw new IndexOutOfBoundsException();
         }
-        if (w < 0 || w > dg.V() - 1) {
+        if (w < 0 || w > graph.V() - 1) {
             throw new IndexOutOfBoundsException();
         }
         if (bfs[v] == null) {
-            bfs[v] = new BreadthFirstDirectedPaths(dg, v);
+            bfs[v] = new BreadthFirstDirectedPaths(graph, v);
         }
         if (bfs[w] == null) {
-            bfs[w] = new BreadthFirstDirectedPaths(dg, w);
+            bfs[w] = new BreadthFirstDirectedPaths(graph, w);
         }
-        int length = Integer.MAX_VALUE;
-        for (int i = 0; i < dg.V(); i++) {
+        int maxvalue = Integer.MAX_VALUE;
+        for (int i = 0; i < graph.V(); i++) {
             if (bfs[v].hasPathTo(i) && bfs[w].hasPathTo(i)) {
                 int len = bfs[v].distTo(i) + bfs[w].distTo(i);
-                if (len <length) {
-                    length = len;
+                if (len < maxvalue) {
+                    maxvalue = len;
                 }
             }
         }
-        // bfs[v] = null;
-        // bfs[w] = null;
-        if (length != Integer.MAX_VALUE) {
-            return length;
+        if (maxvalue != Integer.MAX_VALUE) {
+            return maxvalue;
         } else {
             return -1;
         }
@@ -44,35 +42,33 @@ public class SAP {
 
     // a common ancestor of v and w that participates in a shortest ancestral path; -1 if no such path
     public int ancestor(int v, int w) {
-        if (v < 0 || v > dg.V() - 1) {
+        if (v < 0 || v > graph.V() - 1) {
             throw new IndexOutOfBoundsException();
         }
 
-        if (w < 0 || w > dg.V() - 1) {
+        if (w < 0 || w > graph.V() - 1) {
             throw new IndexOutOfBoundsException();
         }
 
         if (bfs[v] == null) {
-            bfs[v] = new BreadthFirstDirectedPaths(dg, v);
+            bfs[v] = new BreadthFirstDirectedPaths(graph, v);
         }
 
         if (bfs[w] == null) {
-            bfs[w] = new BreadthFirstDirectedPaths(dg, w);
+            bfs[w] = new BreadthFirstDirectedPaths(graph, w);
         }
 
-        int length = Integer.MAX_VALUE;
+        int maxvalue = Integer.MAX_VALUE;
         int ancestor = -1;
-        for (int i = 0; i < dg.V(); i++) {
+        for (int i = 0; i < graph.V(); i++) {
             if (bfs[v].hasPathTo(i) && bfs[w].hasPathTo(i)) {
                 int len = bfs[v].distTo(i) + bfs[w].distTo(i);
-                if (len < length) {
-                    length = len;
+                if (len < maxvalue) {
+                    maxvalue = len;
                     ancestor = i;
                 }
             }
         }
-        // bfs[v] = null;
-        // bfs[w] = null;
         return ancestor;
 
     }

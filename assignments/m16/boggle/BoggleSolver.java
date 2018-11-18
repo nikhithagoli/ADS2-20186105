@@ -13,7 +13,7 @@ public class BoggleSolver {
     /**.
      * { var_description }
      */
-    public static final int T_H_R_E = 3;
+    public static final int T_H_R_E_E = 3;
     /**.
      * { var_description }
      */
@@ -33,7 +33,7 @@ public class BoggleSolver {
     /**.
      * { var_description }
      */
-    public static final int E_L_E = 11;
+    public static final int E_L_E_V_E_N = 11;
     /**.
      * Constructs the object.
      *
@@ -81,12 +81,12 @@ public class BoggleSolver {
         if (visited[i][j]) {
             return;
         }
-        char ch = board.getLetter(i, j);
+        char letter = board.getLetter(i, j);
         String word = str;
-        if (ch == 'Q') {
+        if (letter == 'Q') {
             word += "QU";
         } else {
-            word += ch;
+            word += letter;
         }
         if (!trst.hasPrefix(word)) {
             return;
@@ -123,17 +123,17 @@ public class BoggleSolver {
             case 1:
             case 2:
                 return 0;
-            case T_H_R_E:
+            case T_H_R_E_E:
             case F_O_U_R:
                 return 1;
             case F_I_V_E:
                 return 2;
             case S_I_X:
-                return T_H_R_E;
+                return T_H_R_E_E;
             case S_E_V_E_N:
                 return F_I_V_E;
             default:
-                return E_L_E;
+                return E_L_E_V_E_N;
             }
         } else {
             return 0;

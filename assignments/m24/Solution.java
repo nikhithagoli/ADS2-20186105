@@ -8,7 +8,7 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 	BSTArrayRepresentation(int n) {
 		keys = (Key[]) new Comparable[n];
 		values = (Value[]) new Object[n];
-		this.size = new int[n];
+		size = new int[n];
 		left = new int[n];
 		right = new int[n];
 		for (int i = 0; i < n; i++) {
@@ -25,15 +25,13 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 		if (index == -1) {
 			return 0;
 		}
-
 		return size[index];
 	}
 	public Key min() {
 		if (size() == 0) {
 			System.out.println("Empty binary search tree");
 		}
-		int minIndex = min(0);
-		return keys[minIndex];
+		return keys[min(0)];
 	}
 
 	private int min(int index) {
@@ -41,6 +39,19 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 			return index;
 		}
 		return min(left[index]);
+	}
+	public Key max() {
+		if (size() == 0) {
+			System.out.println("Empty binary search tree");
+		}
+		return keys[max(0)];
+	}
+
+	private int max(int index) {
+		if (right[index] == -1) {
+			return index;
+		}
+		return min(right[index]);
 	}
 
 	public Value get(Key key) {
@@ -66,8 +77,12 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 			System.out.println("Tree is full");
 			return;
 		}
+		if(value == null) {
+			delete(key);
+			return;
+		}
 		put(0, key, value);
-			}
+	}
 
 	private int put(int root, Key key, Value value) {
 		if (root == -1 || keys[root] == null) {
@@ -88,7 +103,7 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 			values[root] = value;
 		}
 
-		size[root] = size(left[root]) + 1 + size(right[root]);
+		size[root] = size(left[root]) + size(right[root]) + 1;
 		return root;
 	}
 
@@ -103,11 +118,9 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 
 		int cmp = key.compareTo(keys[root]);
 		if (cmp < 0) {
-			int leftIndex = delete(left[root], key);
-			left[root] = leftIndex;
+			left[root] = delete(left[root], key);
 		} else if (cmp > 0) {
-			int rightIndex = delete(right[root], key);
-			right[root] = rightIndex;
+			right[root] =  delete(right[root], key);;
 		} else {
 			keys[root] = null;
 			values[root] = null;
@@ -130,7 +143,7 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 				root = nextindex;
 			}
 		}
-		size[root] = size(left[root]) + 1 + size(right[root]);
+		size[root] = size(left[root]) + size(right[root]) + 1;
 		return root;
 	}
 
@@ -141,11 +154,21 @@ class BSTArrayRepresentation<Key extends Comparable<Key>, Value> {
 		if (index == -1 || keys[index] == null) {
 			return -1;
 		}
+		left[index] =  deleteMin(left[index], setKeyNull);;
 
-		int leftIndex = deleteMin(left[index], setKeyNull);
-		left[index] = leftIndex;
+		size[index] = size(left[index]) + size(right[index]) + 1;
+		return index;
+	}
+	public void deleteMax() {
+		int rootIndex = deleteMin(0, true);
+	}
+	private int deleteMax(int index, boolean setKeyNull) {
+		if (index == -1 || keys[index] == null) {
+			return -1;
+		}
+		left[index] =  deleteMax(right[index], setKeyNull);;
 
-		size[index] = size(left[index]) + 1 + size(right[index]);
+		size[index] = size(left[index]) + size(right[index]) + 1;
 		return index;
 	}
 }

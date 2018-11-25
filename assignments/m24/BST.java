@@ -356,7 +356,7 @@ class BST {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        BSTArrayRepresentation<Integer, String> bst = new BSTArrayRepresentation<>(n);
+        BSTwithLinkedList<Integer, String> bst = new BSTwithLinkedList<>();
         Stopwatch sw = new Stopwatch();
         while (n > 0) {
             String s = sc.nextLine();
